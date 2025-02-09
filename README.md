@@ -7,6 +7,13 @@ Software Engineer with strong foundations in system design and architecture, cur
 
 ## Featured Projects
 
+### Larry Croft's Adventures
+Object-oriented game development with focus on software engineering principles
+- Implemented robust system architecture using design patterns
+- Developed UI controller and data persistence layers in Java
+- Practiced agile development in 6-person team environment
+- [View Code](https://github.com/NagareNegishi/LarryCroftsAdventures)
+
 ### Goblins' Fury
 Tower defense with dynamic difficulty system and modular architecture
 - [View Code](https://github.com/NagareNegishi/Tower-Defense-CGRA252)
