@@ -25,7 +25,7 @@ Tower defense with dynamic difficulty system and modular architecture
 
 ## Contact
 - 📧 [negishnaga@myvuw.ac.nz](mailto:negishnaga@myvuw.ac.nz)
-- 📱 021-089-84570
+<!-- - 📱 021-089-84570 -->
 - 🌏 Wellington, New Zealand
 
 ## Website Status
