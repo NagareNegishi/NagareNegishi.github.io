@@ -110,6 +110,21 @@ section h2 {
     text-decoration: underline;
 }
 
+.project-tags {
+    margin: 10px 0 15px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #555;
+    padding: 4px 12px;
+    margin: 2px 4px 2px 0;
+    border-radius: 16px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
 /* Contact section */
 .contact-list {
     list-style: none;
