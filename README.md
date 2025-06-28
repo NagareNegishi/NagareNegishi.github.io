@@ -24,7 +24,7 @@ Tower defense with dynamic difficulty system and modular architecture
 - **7 Korobi 8 Oki** - Platformer with memory-based progression (48hr Game Jam) | [Play](https://negimakushi.itch.io/7-korobi-8-oki)
 
 ## Contact
-- 📧 [negishnaga@myvuw.ac.nz](mailto:negishnaga@myvuw.ac.nz)
+- 📧 [negishinaga@gmail.com](mailto:negishinaga@gmail.com)
 <!-- - 📱 021-089-84570 -->
 - 🌏 Wellington, New Zealand
 
