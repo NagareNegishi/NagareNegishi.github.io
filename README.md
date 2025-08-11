@@ -1,4 +1,4 @@
-# Nagare Nagishi's Portfolio
+# Nagare Negishi's Portfolio
 
 This repository contains my personal portfolio website, showcasing my software engineering projects and technical skills.
 
