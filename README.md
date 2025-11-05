@@ -3,9 +3,19 @@
 This repository contains my personal portfolio website, showcasing my software engineering projects and technical skills.
 
 ## About Me
-Software Engineer with strong foundations in system design and architecture, currently completing BSc in Computer Science at Victoria University of Wellington. Experienced in developing complex systems through both academic projects and game development.
+
+Software Engineer with strong foundations in system design and architecture. BSc Computer Science graduate (2025) from Victoria University of Wellington, experienced in developing complex systems through both academic and game development projects.
+
+**Current Role:** Tutor for AI, Data Structures & Systems Programming at Victoria University of Wellington
 
 ## Featured Projects
+
+### Coffee Finder (2025)
+Location-based web application using JavaScript, HTML/CSS, and Supabase (PostgreSQL)
+- Implemented geolocation services, interactive mapping, and external API integration
+- Created custom SQL functions for geospatial queries and distance calculations
+- [View Project](https://github.com/NagareNegishi/Coffee-Finder)
+- [Demo](https://nagarenegishi.com/Coffee-Finder/)
 
 ### Larry Croft's Adventures
 Object-oriented game development with focus on software engineering principles
@@ -13,6 +23,12 @@ Object-oriented game development with focus on software engineering principles
 - Developed UI controller and data persistence layers in Java
 - Practiced agile development in 6-person team environment
 - [View Code](https://github.com/NagareNegishi/LarryCroftsAdventures)
+
+### ChopChopServe
+Competitive multiplayer cooking game with networked gameplay
+- Real-time network synchronization and player state management
+- Custom cooking interaction systems
+- [View Code](https://github.com/NagareNegishi/ChopChopServe-Public)
 
 ### Goblins' Fury
 Tower defense with dynamic difficulty system and modular architecture
@@ -25,8 +41,10 @@ Tower defense with dynamic difficulty system and modular architecture
 
 ## Contact
 - 📧 [negishinaga@gmail.com](mailto:negishinaga@gmail.com)
-<!-- - 📱 021-089-84570 -->
+- 🌐 [nagarenegishi.com](https://nagarenegishi.com)
+- 💼 [LinkedIn](https://linkedin.com/in/nagare-negishi)
 - 🌏 Wellington, New Zealand
+<!-- - 📱 021-089-84570 -->
 
 ## Website Status
 [![GitHub Pages](https://img.shields.io/github/deployments/NagareNegishi/NagareNegishi.github.io/github-pages)](https://NagareNegishi.github.io)
