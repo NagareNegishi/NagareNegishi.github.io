@@ -13,8 +13,8 @@ export const projects = [
     {
     id: 2,
     title: "Larry Croft's Adventures",
-    tags: ["Java", "OOP", "Software Design"],
-    description: "Object-oriented game development with focus on software engineering principles",
+    tags: ["Java", "OOP", "Software Design", "Group Project"],
+    description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
     links: {
         github: "https://github.com/NagareNegishi/LarryCroftsAdventures"
     }
@@ -22,7 +22,7 @@ export const projects = [
     {
     id: 3,
     title: "ChopChopServe",
-    tags: ["Godot", "Multiplayer", "Networking", "Architecture"],
+    tags: ["Godot", "JavaScript", "Multiplayer-Networking", "Group Project"],
     description: "Competitive multiplayer cooking game featuring real-time network synchronization",
     links: {
         github: "https://github.com/NagareNegishi/ChopChopServe-Public"

@@ -16,6 +16,7 @@ export const skills = [
         "JUnit, JaCoCo",
         "Git, CI/CD",
         "SQL (PostgreSQL, Supabase, JDBC)",
+        "React, Tailwind",
         "Unreal Engine 5, Godot",
         "Figma, UML"
     ]

@@ -20,17 +20,17 @@ body {
 }
 
 /* Header styling */
-/* header {
+header {
     background-color: white;
     padding: 40px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
-} */
+}
 
-/* header h1 {
+header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-} */
+}
 
 /* Section styling */
 section {
