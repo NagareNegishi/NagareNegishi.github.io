@@ -31,7 +31,7 @@ export const projects = [
     {
     id: 4,
     title: "Goblins' Fury",
-    tags: ["Godot", "Architecture"],
+    tags: ["Godot", "Architecture", "Group Project"],
     description: "Tower defense with dynamic difficulty system and modular architecture",
     links: {
         github: "https://github.com/NagareNegishi/Tower-Defense-CGRA252"
@@ -40,7 +40,7 @@ export const projects = [
     {
     id: 5,
     title: "Bar'acuda",
-    tags: ["Godot", "Game Jam"],
+    tags: ["Godot", "Game Jam", "Group Project"],
     description: "Interactive service management simulation (48hr Game Jam)",
     links: {
         demo: "https://games-for-people.itch.io/baracuda",

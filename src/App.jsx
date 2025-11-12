@@ -4,8 +4,6 @@ import Header from './components/Header.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
 
-import './App.css'
-
 function App() {
   return (
     <>
