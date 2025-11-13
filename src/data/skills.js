@@ -14,7 +14,7 @@ export const skills = [
     items: [
         "Maven",
         "JUnit, JaCoCo",
-        "Git, CI/CD",
+        "Git, GitHub Actions",
         "SQL (PostgreSQL, Supabase, JDBC)",
         "React, Tailwind",
         "Unreal Engine 5, Godot",
