@@ -12,10 +12,10 @@ export const skills = [
     {
     category: "Tools & Technologies",
     items: [
-        "Maven",
-        "JUnit, JaCoCo",
+        "Maven, Docker",
+        "JUnit, Ceedling, JaCoCo, Valgrind",
         "Git, GitHub Actions",
-        "SQL (PostgreSQL, Supabase, JDBC)",
+        "Hibernate, JDBC, SQL (PostgreSQL, Supabase)",
         "React, Tailwind",
         "Unreal Engine 5, Godot",
         "Figma, UML"
