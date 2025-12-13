@@ -12,11 +12,11 @@ export const softwareProjects = [
     },
     {
     id: 2,
-    title: "Larry Croft's Adventures",
-    tags: ["Java", "OOP", "Software Design", "Group Project"],
-    description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
+    title: "Distributed Logging System",
+    tags: ["Java", "REST API", "Hibernate", "Maven"],
+    description: "Distributed logging system with custom Log4j appender, REST API, and JMX monitoring",
     links: {
-        github: "https://github.com/NagareNegishi/LarryCroftsAdventures"
+        github: "https://github.com/NagareNegishi/Distributed-Logging-System"
     }
     },
     {
