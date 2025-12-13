@@ -1,14 +1,24 @@
-import { softwareProjects } from '../data/projects';
+import { gameProjects, softwareProjects } from '../data/projects';
 
 function Projects() {
     return (
         <section className="projects">
             <div className="container">
-                <h2>Featured Projects</h2>
-                <div className="project-grid">
-                    {softwareProjects.map((project) => (
-                        <ProjectCard key={project.id} project={project} />
-                    ))}
+                <div className="mb-8">
+                    <h2 className="mb-6">Featured Projects</h2>
+                    <div className="project-grid">
+                        {softwareProjects.map((project) => (
+                            <ProjectCard key={project.id} project={project} />
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <h2 className="mb-6">Game Development</h2>
+                    <div className="project-grid">
+                        {gameProjects.map((project) => (
+                            <ProjectCard key={project.id} project={project} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
