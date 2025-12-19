@@ -64,12 +64,21 @@ export const gameProjects = [
     {
     id: 4,
     title: "1 Fuji 2 Hawk 3 Nasubi",
-    tags: ["Unreal Engine", "Game Jam"],
+    tags: ["C++", "Game Jam"],
     description: "Top-down competitive collector with AI-controlled entities (48hr Game Jam)",
     links: {
         demo: "https://negimakushi.itch.io/1-fuji-2-hawk-3-nasubi",
         demoLabel: "Play Game",
         github: "https://github.com/NagareNegishi/Game-jam2"
+    }
+    },
+    {
+    id: 5,
+    title: "OpenGL Rendering Projects",
+    tags: ["Unreal Engine", "Game Jam"],
+    description: "Implementations of core graphics techniques including ray tracing and boids flocking simulation",
+    links: {
+        github: "https://github.com/NagareNegishi/OpenGL-Ray-tracing"
     }
     }
 ];
