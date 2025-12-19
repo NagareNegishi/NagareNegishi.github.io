@@ -75,7 +75,7 @@ export const gameProjects = [
     {
     id: 5,
     title: "OpenGL Rendering Projects",
-    tags: ["C++", "GOpenGL", "Algorithms"],
+    tags: ["C++", "OpenGL", "Algorithms"],
     description: "Implementations of core graphics techniques including ray tracing and boids flocking simulation",
     links: {
         github: "https://github.com/NagareNegishi/OpenGL-Ray-tracing"
