@@ -2,7 +2,7 @@ export const softwareProjects = [
     {
     id: 1,
     title: "Coffee Finder",
-    tags: ["JavaScript", "SQL", "API Integration"],
+    tags: ["JavaScript", "SQL", "API Integration", "Docker"],
     description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
     links: {
         demo: "https://nagarenegishi.com/Coffee-Finder/",
