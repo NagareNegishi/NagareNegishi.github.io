@@ -13,7 +13,7 @@ export const softwareProjects = [
     {
     id: 2,
     title: "Distributed Logging System",
-    tags: ["Java", "REST API", "Hibernate", "Maven"],
+    tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
     description: "Distributed logging system with custom Log4j appender, REST API, and JMX monitoring",
     links: {
         github: "https://github.com/NagareNegishi/Distributed-Logging-System"
