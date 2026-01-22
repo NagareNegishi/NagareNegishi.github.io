@@ -27,6 +27,15 @@ export const softwareProjects = [
     links: {
         github: "https://github.com/NagareNegishi/LarryCroftsAdventures"
     }
+    },
+    {
+    id: 4,
+    title: "Portfolio Website",
+    tags: ["React", "Tailwind", "Vite"],
+    description: "Personal portfolio refactored from vanilla JavaScript to React",
+    links: {
+        github: "https://github.com/NagareNegishi/NagareNegishi.github.io"
+    }
     }
 ];
 
