@@ -7,7 +7,7 @@ export const softwareProjects = [
     links: {
         demo: "http://nagarenegishi.com/Pantry2Plate/",
         demoLabel: "UI Demo",
-        github: "https://https://github.com/NagareNegishi/Pantry2Plate",
+        github: "https://github.com/NagareNegishi/Pantry2Plate",
     }
     },
     {
