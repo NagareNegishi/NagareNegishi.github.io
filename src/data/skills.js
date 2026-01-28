@@ -4,7 +4,7 @@ export const skills = [
     items: [
         "Java",
         "C/C++",
-        "JavaScript",
+        "TypeScript/JavaScript",
         "Python (Prior Experience)",
         "GDScript (\"Python-like\" language)"
     ]
@@ -13,15 +13,19 @@ export const skills = [
     category: "Development Tools",
     items: [
         "Maven, Docker",
-        "JUnit, Ceedling, JaCoCo, Valgrind",
+        "JUnit, JaCoCo (Java)",
+        "Ceedling, Valgrind",
+        "Jest, Vitest (TypeScript)",
         "Git, GitHub Actions",
     ]
     },
     {
     category: "Technologies & Frameworks",
     items: [
+        "Node.js, Express",
         "Hibernate, JDBC, SQL (PostgreSQL, Supabase)",
         "React, Tailwind",
+        "Claude API, REST APIs",
         "Unreal Engine 5, Godot",
         "Figma, UML"
     ]
