@@ -14,7 +14,7 @@ export const skills = [
     items: [
         "Maven, Docker",
         "JUnit, JaCoCo (Java)",
-        "Ceedling, Valgrind",
+        "Ceedling, Valgrind (C/C++)",
         "Jest, Vitest (TypeScript)",
         "Git, GitHub Actions",
     ]
