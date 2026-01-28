@@ -1,6 +1,17 @@
 export const softwareProjects = [
     {
     id: 1,
+    title: "Pantry2Plate",
+    tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
+    description: "Full-stack AI-powered menu generator creating personalized recipes from ingredients and dietary preferences",
+    links: {
+        demo: "http://nagarenegishi.com/Pantry2Plate/",
+        demoLabel: "UI Demo",
+        github: "https://https://github.com/NagareNegishi/Pantry2Plate",
+    }
+    },
+    {
+    id: 2,
     title: "Coffee Finder",
     tags: ["JavaScript", "SQL", "API Integration", "Docker"],
     description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
@@ -11,7 +22,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 2,
+    id: 3,
     title: "Distributed Logging System",
     tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
     description: "Distributed logging system with custom Log4j appender, REST API, and JMX monitoring",
@@ -20,7 +31,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 3,
+    id: 4,
     title: "Larry Croft's Adventures",
     tags: ["Java", "OOP", "Software Design", "Group Project"],
     description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
@@ -29,7 +40,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 4,
+    id: 5,
     title: "Portfolio Website",
     tags: ["React", "Tailwind", "Vite"],
     description: "Personal portfolio refactored from vanilla JavaScript to React",
