@@ -27,7 +27,7 @@ export const skills = [
         "Node.js, Express",
         "Hibernate, JDBC, SQL (PostgreSQL, Supabase)",
         "EF Core, ASP.NET Identity",
-        "React, Tailwind",
+        "React, React Native, Tailwind",
         "Claude API, REST APIs",
         "Unreal Engine 5, Godot",
         "Figma, UML"
