@@ -12,7 +12,7 @@ export const softwareProjects = [
     id: 2,
     title: "Pantry2Plate",
     tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
-    description: "Full-stack AI-powered menu generator creating personalized recipes from ingredients and dietary preferences",
+    description: "AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps",
     links: {
         demo: "http://nagarenegishi.com/Pantry2Plate/",
         demoLabel: "UI Demo",
@@ -23,7 +23,7 @@ export const softwareProjects = [
     id: 3,
     title: "Distributed Logging System",
     tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
-    description: "Distributed logging system with custom Log4j appender, REST API, and JMX monitoring",
+    description: "Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX",
     links: {
         github: "https://github.com/NagareNegishi/Distributed-Logging-System"
     }

@@ -4,11 +4,29 @@ This repository contains my personal portfolio website, showcasing my software e
 
 ## About Me
 
-Software Engineer with strong foundations in system design and architecture. BSc Computer Science graduate (2025) from Victoria University of Wellington, experienced in developing complex systems through both academic and game development projects.
+Software Engineer with strong foundations in system design and architecture. BSc Computer Science graduate (2025) from Victoria University of Wellington.
 
-**Current Role:** Tutor for AI, Data Structures & Systems Programming at Victoria University of Wellington
+Previously interned at Aviat Networks, working on legacy C systems in an Agile team, and tutored AI, Data Structures & Systems Programming at Victoria University of Wellington.
 
 ## Featured Projects
+
+### Job Application Tracker (2026 — Ongoing)
+Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates — built from scratch while learning C#, then scaled with Claude Code in Dev Containers
+- ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
+- React + TypeScript frontend with TanStack Query
+- [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
+
+### Pantry2Plate (2026)
+AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
+- Claude API integration, Express backend, Docker Compose deployment
+- GitHub Actions CI/CD with Jest and Vitest testing
+- [View Project](https://github.com/NagareNegishi/Pantry2Plate)
+- [Demo](http://nagarenegishi.com/Pantry2Plate/)
+
+### Distributed Logging System (2025)
+Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX
+- Hibernate/JPA persistence with environment-based config for in-memory and production PostgreSQL
+- [View Code](https://github.com/NagareNegishi/Distributed-Logging-System)
 
 ### Coffee Finder (2025)
 Location-based web application using JavaScript, HTML/CSS, and Supabase (PostgreSQL)
