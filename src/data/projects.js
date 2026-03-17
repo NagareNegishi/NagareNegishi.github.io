@@ -1,6 +1,15 @@
 export const softwareProjects = [
-    {
+        {
     id: 1,
+    title: "Job Application Tracker",
+    tags: ["EF Core", "Identity", "Dev Containers", "Claude Code", "React", "TypeScript"],
+    description: "Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers",
+    links: {
+        github: "https://github.com/NagareNegishi/Job-Application-Tracker"
+    }
+    },
+    {
+    id: 2,
     title: "Pantry2Plate",
     tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
     description: "Full-stack AI-powered menu generator creating personalized recipes from ingredients and dietary preferences",
@@ -8,17 +17,6 @@ export const softwareProjects = [
         demo: "http://nagarenegishi.com/Pantry2Plate/",
         demoLabel: "UI Demo",
         github: "https://github.com/NagareNegishi/Pantry2Plate",
-    }
-    },
-    {
-    id: 2,
-    title: "Coffee Finder",
-    tags: ["JavaScript", "SQL", "API Integration", "Docker"],
-    description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
-    links: {
-        demo: "https://nagarenegishi.com/Coffee-Finder/",
-        demoLabel: "Live Demo",
-        github: "https://github.com/NagareNegishi/Coffee-Finder",
     }
     },
     {
@@ -32,6 +30,17 @@ export const softwareProjects = [
     },
     {
     id: 4,
+    title: "Coffee Finder",
+    tags: ["JavaScript", "SQL", "API Integration", "Docker"],
+    description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
+    links: {
+        demo: "https://nagarenegishi.com/Coffee-Finder/",
+        demoLabel: "Live Demo",
+        github: "https://github.com/NagareNegishi/Coffee-Finder",
+    }
+    },
+    {
+    id: 5,
     title: "Larry Croft's Adventures",
     tags: ["Java", "OOP", "Software Design", "Group Project"],
     description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
