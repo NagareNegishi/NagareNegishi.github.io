@@ -2,9 +2,11 @@ export const softwareProjects = [
         {
     id: 1,
     title: "Job Application Tracker",
-    tags: ["EF Core", "Identity", "Dev Containers", "Claude Code", "React", "TypeScript"],
+    tags: ["EF Core", "Identity", "AWS", "CI/CD", "Dev Containers", "Claude Code", "React", "TypeScript"],
     description: "Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers",
     links: {
+        demo: "https://jobtracker.nagarenegishi.com/jobs/",
+        demoLabel: "Live Demo",
         github: "https://github.com/NagareNegishi/Job-Application-Tracker"
     }
     },
