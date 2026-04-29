@@ -15,6 +15,7 @@ Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch par
 - ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
 - React + TypeScript frontend with TanStack Query
 - [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
+- [Demo](https://jobtracker.nagarenegishi.com/jobs/)
 
 ### Pantry2Plate (2026)
 AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
