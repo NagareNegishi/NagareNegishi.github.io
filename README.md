@@ -61,7 +61,7 @@ Tower defense with dynamic difficulty system and modular architecture
 - 📧 [negishinaga@gmail.com](mailto:negishinaga@gmail.com)
 - 🌐 [nagarenegishi.com](https://nagarenegishi.com)
 - 💼 [LinkedIn](https://linkedin.com/in/nagare-negishi)
-- 🌏 Wellington, New Zealand
+- 🌏 Auckland, New Zealand
 <!-- - 📱 021-089-84570 -->
 
 ## Website Status
