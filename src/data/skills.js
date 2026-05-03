@@ -29,6 +29,7 @@ export const skills = [
         "EF Core, ASP.NET Identity",
         "React, React Native, Tailwind",
         "Claude API, REST APIs",
+        "AWS (EC2, S3, RDS)",
         "Unreal Engine 5, Godot",
         "Figma, UML"
     ]
