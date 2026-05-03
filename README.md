@@ -11,10 +11,11 @@ Previously interned at Aviat Networks, working on legacy C systems in an Agile t
 ## Featured Projects
 
 ### Job Application Tracker (2026 — Ongoing)
-Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates — built from scratch while learning C#, then scaled with Claude Code in Dev Containers
+Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers, deployed on AWS.
 - ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
 - React + TypeScript frontend with TanStack Query
 - [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
+- [Demo](https://jobtracker.nagarenegishi.com/jobs/)
 
 ### Pantry2Plate (2026)
 AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
