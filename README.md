@@ -14,6 +14,8 @@ Previously interned at Aviat Networks, working on legacy C systems in an Agile t
 Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers, deployed on AWS.
 - ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
 - React + TypeScript frontend with TanStack Query
+- AI auto-fill using Claude API to extract structured job data from pasted listings
+- Deployed to AWS (EC2 + Docker Compose, RDS, S3) with GitHub Actions CI/CD (test → build → migrate → deploy)
 - [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
 - [Demo](https://jobtracker.nagarenegishi.com/jobs/)
 
