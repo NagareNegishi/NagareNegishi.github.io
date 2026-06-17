@@ -19,6 +19,15 @@ Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch par
 - [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
 - [Demo](https://jobtracker.nagarenegishi.com/jobs/)
 
+### Company Verification (2026)
+Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, returning a normalized result regardless of source
+- Adapter-per-country design keeps core logic untouched when a new registry is added, with New Zealand (NZBN) and Australia (ABR) built in
+- Shared core consumed as a class library and an HTTP API, structured so an MCP server can sit on the same core
+- Government-registry integration with credential handling, registry-specific filtering, and MBIE attribution compliance
+- [View Code](https://github.com/NagareNegishi/company-verification)
+- [NuGet](https://www.nuget.org/packages/CompanyVerification.Core)
+- [Demo query](https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ) returns live JSON from the NZ register (Render free tier, first request may take 30–60s to wake)
+
 ### Pantry2Plate (2026)
 AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
 - Claude API integration, Express backend, Docker Compose deployment
