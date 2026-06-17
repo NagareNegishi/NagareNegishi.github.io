@@ -12,6 +12,17 @@ export const softwareProjects = [
     },
     {
     id: 2,
+    title: "Company Verification",
+    tags: [".NET 10", "C#", "NuGet", "REST API", "Adapter Pattern", "Architecture"],
+    description: "Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, with an adapter-per-country design that adds new registries without touching core logic",
+    links: {
+        demo: "https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ",
+        demoLabel: "API Demo",
+        github: "https://github.com/NagareNegishi/company-verification"
+    }
+    },
+    {
+    id: 3,
     title: "Pantry2Plate",
     tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
     description: "AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps",
@@ -22,7 +33,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 3,
+    id: 4,
     title: "Distributed Logging System",
     tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
     description: "Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX",
@@ -31,7 +42,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 4,
+    id: 5,
     title: "Coffee Finder",
     tags: ["JavaScript", "SQL", "API Integration", "Docker"],
     description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
@@ -42,7 +53,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 5,
+    id: 6,
     title: "Larry Croft's Adventures",
     tags: ["Java", "OOP", "Software Design", "Group Project"],
     description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
