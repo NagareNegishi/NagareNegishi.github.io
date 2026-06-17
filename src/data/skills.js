@@ -13,7 +13,7 @@ export const skills = [
     {
     category: "Development Tools",
     items: [
-        "Maven, Docker, Dev Containers",
+        "Maven, NuGet, Docker, Dev Containers",
         "JUnit, JaCoCo (Java)",
         "Ceedling, Valgrind (C/C++)",
         "Jest, Vitest (TypeScript)",
@@ -26,7 +26,7 @@ export const skills = [
     items: [
         "Node.js, Express",
         "Hibernate, JDBC, SQL (PostgreSQL, Supabase)",
-        "EF Core, ASP.NET Identity",
+        "ASP.NET Core, EF Core, ASP.NET Identity",
         "React, React Native, Tailwind",
         "Claude API, REST APIs",
         "AWS (EC2, S3, RDS)",
