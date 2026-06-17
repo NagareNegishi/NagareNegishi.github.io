@@ -13,7 +13,7 @@ Previously interned at Aviat Networks, working on legacy C systems in an Agile t
 ### Job Application Tracker (2026 — Ongoing)
 Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers, deployed on AWS.
 - ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
-- React + TypeScript frontend with TanStack Query
+- React + TypeScript frontend with TanStack Query, table and Kanban views with drag-and-drop
 - AI auto-fill using Claude API to extract structured job data from pasted listings
 - Deployed to AWS (EC2 + Docker Compose, RDS, S3) with GitHub Actions CI/CD (test → build → migrate → deploy)
 - [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
@@ -29,15 +29,16 @@ Published .NET 10 NuGet package that verifies whether a company is registered an
 - [Demo query](https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ) returns live JSON from the NZ register (Render free tier, first request may take 30–60s to wake)
 
 ### Pantry2Plate (2026)
-AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
+AI-powered recipe generator with ingredient and dietary preference matching, architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
 - Claude API integration, Express backend, Docker Compose deployment
 - GitHub Actions CI/CD with Jest and Vitest testing
 - [View Project](https://github.com/NagareNegishi/Pantry2Plate)
 - [Demo](http://nagarenegishi.com/Pantry2Plate/)
 
 ### Distributed Logging System (2025)
-Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX
+Logging infrastructure with a custom Log4j HTTP appender and REST API, test-driven, with graceful failure handling and real-time JMX monitoring
 - Hibernate/JPA persistence with environment-based config for in-memory and production PostgreSQL
+- Transaction management and multi-format export (CSV, HTML, Excel)
 - [View Code](https://github.com/NagareNegishi/Distributed-Logging-System)
 
 ### Coffee Finder (2025)
