@@ -13,6 +13,11 @@ Personal portfolio site — React 19, Vite 7, Tailwind CSS v4. Deployed to GitHu
 | `src/data/skills.js` | Skills by category |
 
 
+## Improvement tracking
+
+Read `docs/plan.md` and `docs/progress.md` before any improvement work.
+Update `docs/progress.md` when a feature or step completes.
+
 ## Stack notes
 
 - **Tailwind v4** — configured via `@tailwindcss/vite` plugin in `vite.config.js`. No `tailwind.config.js`, no PostCSS. CSS entry uses `@import "tailwindcss";`.
