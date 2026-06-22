@@ -3,6 +3,9 @@ export const personalInfo = {
 	title: "Software Engineer",
 	email: "negishinaga@gmail.com",
 	location: "Auckland, New Zealand",
+	// Social links used in Header and Contact
+	github: "https://github.com/NagareNegishi",
+	linkedin: "https://www.linkedin.com/in/nagare-negishi/",
 	about: [
 		"Software Engineer with strong foundations in system design and architecture. BSc Computer Science graduate (2025) from Victoria University of Wellington, experienced in developing complex systems through both academic and game development projects.",
 		"Volunteer Software Developer at Aviat Networks (2025), contributing to legacy codebase modernization through unit testing, hardware simulation, and quality assurance.",
