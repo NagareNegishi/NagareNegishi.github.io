@@ -19,38 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Projects section */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.project-card p {
-    margin-bottom: 15px;
-    color: #666;
-}
-
-.project-tags {
-    margin: 10px 0 15px 0;
-}
-
-.tag {
-    display: inline-block;
-    background: #f0f0f0;
-    color: #555;
-    padding: 4px 12px;
-    margin: 2px 4px 2px 0;
-    border-radius: 16px;
-    font-size: 0.85em;
-    font-weight: 500;
-}
-
 /* Nav bar */
 .nav {
     background-color: #f0f4f8;  /* slightly blue-gray to contrast with white sections */
@@ -95,7 +63,4 @@ html {
         font-size: 2rem;
     }
 
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
 }

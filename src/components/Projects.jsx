@@ -7,7 +7,7 @@ function Projects() {
             <div className="max-w-[1200px] mx-auto px-5">
                 <div className="mb-8">
                     <SectionHeading>Featured Projects</SectionHeading>
-                    <div className="project-grid">
+                    <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[30px]">
                         {softwareProjects.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}
@@ -15,7 +15,7 @@ function Projects() {
                 </div>
                 <div>
                     <SectionHeading>Game Development</SectionHeading>
-                    <div className="project-grid">
+                    <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[30px]">
                         {gameProjects.map((project) => (
                             <ProjectCard key={project.id} project={project} />
                         ))}
@@ -26,17 +26,21 @@ function Projects() {
     )
 }
 
-
 function ProjectCard({ project }) {
     return (
-        <div className="project-card bg-white p-5 rounded-lg shadow-md">
-            <h3>{project.title}</h3>
-            <div className="project-tags">
+        <div className="bg-white p-5 rounded-lg shadow-md">
+            <h3 className="text-2xl mb-[15px]">{project.title}</h3>
+            <div className="mt-2.5 mb-[15px]">
                 {project.tags.map((tag, index) => (
-                    <span className="tag" key={index}>{tag}</span>
+                    <span
+                        className="inline-block bg-[#f0f0f0] text-[#555] py-1 px-3 my-0.5 mr-1 rounded-2xl text-[0.85em] font-medium"
+                        key={index}
+                    >
+                        {tag}
+                    </span>
                 ))}
             </div>
-            <p>{project.description}</p>
+            <p className="mb-[15px] text-[#666]">{project.description}</p>
             <div className="flex gap-[15px]">
                 {project.links.demo && (
                     <a className="text-[#0066cc] no-underline hover:underline"
@@ -50,6 +54,5 @@ function ProjectCard({ project }) {
         </div>
     );
 }
-
 
 export default Projects;
