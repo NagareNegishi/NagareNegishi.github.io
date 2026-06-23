@@ -2,7 +2,7 @@ import { gameProjects, softwareProjects } from '../data/projects';
 
 function Projects() {
     return (
-        <section className="projects">
+        <section id="projects" className="projects">
             <div className="container">
                 <div className="mb-8">
                     <h2 className="mb-6">Featured Projects</h2>
