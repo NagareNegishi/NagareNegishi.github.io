@@ -118,6 +118,13 @@ section h2 {
     color: #0066cc;
 }
 
+/* Applied to whichever link matches the currently visible section */
+.nav-link-active {
+    background-color: #dce8f5;
+    color: #0066cc;
+    font-weight: 600;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     header {
