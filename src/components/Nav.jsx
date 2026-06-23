@@ -24,7 +24,7 @@ function Nav() {
             { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1.0] }
         )
 
-        document.querySelectorAll('section[id]').forEach(s => observer.observe(s))
+        document.querySelectorAll('section[id], header[id]').forEach(s => observer.observe(s))
 
         // cleanup: stop watching when Nav unmounts to avoid memory leaks
         return () => observer.disconnect()
@@ -34,7 +34,8 @@ function Nav() {
         // sticky: scrolls with page until it hits the top, then locks — unlike fixed which is always locked
         <nav className="nav sticky top-0 z-10 shadow-sm">
             <div className="container flex gap-8 py-3">
-                <a href="#about"    className={`nav-link ${active === 'about'    ? 'nav-link-active' : ''}`}>About</a>
+                {/* About scrolls to the header */}
+                <a href="#header"   className={`nav-link ${active === 'header'   ? 'nav-link-active' : ''}`}>About</a>
                 <a href="#skills"   className={`nav-link ${active === 'skills'   ? 'nav-link-active' : ''}`}>Skills</a>
                 <a href="#projects" className={`nav-link ${active === 'projects' ? 'nav-link-active' : ''}`}>Projects</a>
                 <a href="#contact"  className={`nav-link ${active === 'contact'  ? 'nav-link-active' : ''}`}>Contact</a>
