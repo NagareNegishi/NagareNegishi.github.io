@@ -58,6 +58,12 @@ function Nav() {
                     Projects
                 </a>
                 <a
+                    href="#game-dev"
+                    className={`${linkBase} ${active === 'game-dev' ? linkActive : ''}`}
+                >
+                    Games
+                </a>
+                <a
                     href="#contact"
                     className={`${linkBase} ${active === 'contact' ? linkActive : ''}`}
                 >

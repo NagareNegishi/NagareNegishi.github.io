@@ -49,24 +49,32 @@
 **Scope:**
 - Convert all named CSS classes in `index.css` to Tailwind utilities in each component
 - Keep only truly global rules in `index.css` (e.g., `scroll-behavior`, `font-family` on `body`)
-- Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `Projects.jsx`, `Contact.jsx`, `Header.jsx`
+- Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `ProjectCard.jsx`, `ProjectSection.jsx`, `Contact.jsx`, `Header.jsx`
 
 **Note:** Do in a dedicated session — touches every component.
 
 
+## 3c. Projects Section Split
+
+**Status:** Done
+
+**Goal:** Separate software projects and game projects into independent section cards with their own nav links.
+
+**What was built:**
+- `ProjectCard.jsx` — extracted card UI, importable anywhere
+- `ProjectSection.jsx` — generic component accepting `id`, `title`, `projects` props
+- `Projects.jsx` deleted — replaced by the two files above
+- `App.jsx` now renders two `<ProjectSection />` calls with `id="projects"` and `id="game-dev"`
+- Nav updated with Projects / Games labels
+
+
 ## 3b. SectionCard Visual Polish
 
-**Status:** Not started — start here next session
+**Status:** Done
 
-**Goal:** Style the white section cards that wrap each content section.
+**Goal:** Style the section cards that wrap each content section.
 
-**Current state:** `SectionCard.jsx` has two class strings — the styled version is commented out, the invisible version is active. Uncomment to restore the card.
-
-**Decisions to make:**
-- Padding inside the card (`py-*`) vs. padding on the section element (gap between cards)
-- Shadow intensity (`shadow-sm`, `shadow`, `shadow-md`)
-- Corner rounding (`rounded-lg`, `rounded-xl`, `rounded-2xl`)
-- Gap between cards on the gray background
+**Result:** `border border-gray-200 shadow-sm rounded-lg py-8 px-8` — no bg fill, inherits page gray. Section gap reduced to `py-8 md:py-12` across all sections.
 
 
 ## 4. Scroll-in Animations
