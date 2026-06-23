@@ -49,9 +49,23 @@
 **Scope:**
 - Convert all named CSS classes in `index.css` to Tailwind utilities in each component
 - Keep only truly global rules in `index.css` (e.g., `scroll-behavior`, `font-family` on `body`)
-- Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `Projects.jsx`, `Contact.jsx`, `Header.jsx`
+- Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `ProjectCard.jsx`, `ProjectSection.jsx`, `Contact.jsx`, `Header.jsx`
 
 **Note:** Do in a dedicated session — touches every component.
+
+
+## 3c. Projects Section Split
+
+**Status:** Done
+
+**Goal:** Separate software projects and game projects into independent section cards with their own nav links.
+
+**What was built:**
+- `ProjectCard.jsx` — extracted card UI, importable anywhere
+- `ProjectSection.jsx` — generic component accepting `id`, `title`, `projects` props
+- `Projects.jsx` deleted — replaced by the two files above
+- `App.jsx` now renders two `<ProjectSection />` calls with `id="projects"` and `id="game-dev"`
+- Nav updated with Projects / Games labels
 
 
 ## 3b. SectionCard Visual Polish
