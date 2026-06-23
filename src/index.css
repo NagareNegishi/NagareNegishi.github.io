@@ -19,13 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Section styling */
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
 /* Skills section */
 .skills-grid {
     display: grid;
