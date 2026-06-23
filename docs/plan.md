@@ -40,6 +40,8 @@
 
 ## 3. Standardize Styling to Tailwind
 
+**Status:** Done
+
 **Goal:** Remove the mix of regular CSS and Tailwind utility classes. Use Tailwind exclusively for all component styles.
 
 **Why:** Currently `index.css` has named classes (`.nav-link`, `.project-card`, `.container`, etc.) while JSX uses Tailwind utilities inline. Mixing means styles live in two places, making debugging harder.
