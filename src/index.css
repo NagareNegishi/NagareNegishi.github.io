@@ -129,6 +129,8 @@ section h2 {
     background-color: #c8dcf2;
     color: #0066cc;
     font-weight: 600;
+    box-shadow: 0 0 2px 1px #a0c4e0,
+                0 0 5px 1px rgba(138, 181, 221, 0.2);
 }
 
 /* Responsive design */
