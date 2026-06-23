@@ -100,13 +100,21 @@ section h2 {
 }
 
 /* Nav bar */
+.nav {
+    background-color: #f0f4f8;  /* slightly blue-gray to contrast with white sections */
+}
+
 .nav-link {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
 }
 
 .nav-link:hover {
+    background-color: #dce8f5;  /* deeper blue-gray pill on hover */
     color: #0066cc;
 }
 
