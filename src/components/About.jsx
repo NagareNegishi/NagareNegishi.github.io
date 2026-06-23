@@ -1,10 +1,11 @@
 import { personalInfo } from "../data/personalInfo";
+import SectionHeading from "./SectionHeading";
 
 function About() {
     return (
-        <section id="about" className="about">
+        <section className="about">
             <div className="container">
-                <h2>About Me</h2>
+                <SectionHeading>About Me</SectionHeading>
                 { personalInfo.about.map((paragraph, index) => (
                     <p key={index}>{ paragraph }</p>
                 ))}

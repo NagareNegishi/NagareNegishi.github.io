@@ -1,10 +1,11 @@
 import { skills } from "../data/skills";
+import SectionHeading from "./SectionHeading";
 
 function Skills() {
     return (
         <section id="skills" className="skills">
             <div className="container">
-                <h2>Technical Skills</h2>
+                <SectionHeading>Technical Skills</SectionHeading>
                 <div className="skills-grid">
                     {skills.map((skillCategory, index) => (
                         <div className="skill-category" key={index}>
