@@ -1,14 +1,16 @@
 import { personalInfo } from "../data/personalInfo";
+import SectionCard from "./SectionCard";
+import SectionHeading from "./SectionHeading";
 
 function About() {
     return (
-        <section id="about" className="about">
-            <div className="container">
-                <h2>About Me</h2>
+        <section className="py-10 md:py-15 scroll-mt-16">
+            <SectionCard>
+                <SectionHeading>About Me</SectionHeading>
                 { personalInfo.about.map((paragraph, index) => (
                     <p key={index}>{ paragraph }</p>
                 ))}
-            </div>
+            </SectionCard>
         </section>
     )
 }

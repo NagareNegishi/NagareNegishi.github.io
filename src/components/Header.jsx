@@ -4,8 +4,8 @@ import IconLink from './IconLink'
 
 function Header() {
     return (
-        <header className="bg-white py-10 shadow-md text-center">
-            <h1 className="text-5xl mb-5.5 font-bold">{personalInfo.name}</h1>
+        <header id="header" className="bg-white py-[30px] md:py-10 shadow-md text-center">
+            <h1 className="text-[2rem] md:text-5xl mb-5.5 font-bold">{personalInfo.name}</h1>
             <p className="text-xl mb-4">{personalInfo.title}</p>
             <div className="flex justify-center gap-6">
                 <IconLink icon={<FaGithub />}   href={personalInfo.github}   label="GitHub"   external />

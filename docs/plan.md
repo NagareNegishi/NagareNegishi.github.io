@@ -40,6 +40,8 @@
 
 ## 3. Standardize Styling to Tailwind
 
+**Status:** Done
+
 **Goal:** Remove the mix of regular CSS and Tailwind utility classes. Use Tailwind exclusively for all component styles.
 
 **Why:** Currently `index.css` has named classes (`.nav-link`, `.project-card`, `.container`, etc.) while JSX uses Tailwind utilities inline. Mixing means styles live in two places, making debugging harder.
@@ -50,6 +52,21 @@
 - Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `Projects.jsx`, `Contact.jsx`, `Header.jsx`
 
 **Note:** Do in a dedicated session — touches every component.
+
+
+## 3b. SectionCard Visual Polish
+
+**Status:** Not started — start here next session
+
+**Goal:** Style the white section cards that wrap each content section.
+
+**Current state:** `SectionCard.jsx` has two class strings — the styled version is commented out, the invisible version is active. Uncomment to restore the card.
+
+**Decisions to make:**
+- Padding inside the card (`py-*`) vs. padding on the section element (gap between cards)
+- Shadow intensity (`shadow-sm`, `shadow`, `shadow-md`)
+- Corner rounding (`rounded-lg`, `rounded-xl`, `rounded-2xl`)
+- Gap between cards on the gray background
 
 
 ## 4. Scroll-in Animations
