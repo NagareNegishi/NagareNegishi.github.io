@@ -19,35 +19,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Skills section */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.skill-category h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
-
-.skill-category ul {
-    list-style: none;
-}
-
-.skill-category li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.skill-category li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-}
-
 /* Projects section */
 .project-grid {
     display: grid;
