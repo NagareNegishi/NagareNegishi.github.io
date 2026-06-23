@@ -2,7 +2,7 @@ import { personalInfo } from "../data/personalInfo";
 
 function About() {
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="container">
                 <h2>About Me</h2>
                 { personalInfo.about.map((paragraph, index) => (
