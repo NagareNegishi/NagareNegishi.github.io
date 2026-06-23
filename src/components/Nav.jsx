@@ -1,4 +1,8 @@
+import { useState, useEffect } from 'react'
+
 function Nav() {
+    const [active, setActive] = useState('')
+
     return (
         // sticky: scrolls with page until it hits the top, then locks — unlike fixed which is always locked
         <nav className="nav sticky top-0 z-10 shadow-sm">
