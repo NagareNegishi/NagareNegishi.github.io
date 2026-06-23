@@ -3,7 +3,7 @@ import SectionHeading from './SectionHeading';
 
 function Projects() {
     return (
-        <section id="projects" className="projects">
+        <section id="projects" className="py-10 md:py-15 scroll-mt-16">
             <div className="max-w-[1200px] mx-auto px-5">
                 <div className="mb-8">
                     <SectionHeading>Featured Projects</SectionHeading>

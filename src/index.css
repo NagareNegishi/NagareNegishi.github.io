@@ -20,12 +20,6 @@ html {
 }
 
 /* Section styling */
-section {
-    padding: 60px 0;
-    /* Offsets jump target so sticky nav doesn't cover the section heading */
-    scroll-margin-top: 64px;
-}
-
 section h2 {
     font-size: 2rem;
     margin-bottom: 30px;
@@ -135,10 +129,6 @@ section h2 {
 
     header h1 {
         font-size: 2rem;
-    }
-
-    section {
-        padding: 40px 0;
     }
 
     .project-grid {

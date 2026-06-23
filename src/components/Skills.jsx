@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 function Skills() {
     return (
-        <section id="skills" className="skills">
+        <section id="skills" className="py-10 md:py-15 scroll-mt-16">
             <div className="max-w-[1200px] mx-auto px-5">
                 <SectionHeading>Technical Skills</SectionHeading>
                 <div className="skills-grid">

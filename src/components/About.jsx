@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 
 function About() {
     return (
-        <section className="about">
+        <section className="py-10 md:py-15 scroll-mt-16">
             <div className="max-w-[1200px] mx-auto px-5">
                 <SectionHeading>About Me</SectionHeading>
                 { personalInfo.about.map((paragraph, index) => (

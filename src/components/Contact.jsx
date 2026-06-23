@@ -5,7 +5,7 @@ import SectionHeading from './SectionHeading'
 
 function Contact() {
     return (
-        <section id="contact" className="contact">
+        <section id="contact" className="py-10 md:py-15 scroll-mt-16">
             <div className="max-w-[1200px] mx-auto px-5">
                 <SectionHeading>Contact</SectionHeading>
                 <div className="flex justify-center">
