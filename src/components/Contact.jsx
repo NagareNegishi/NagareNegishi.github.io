@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading'
 
 function Contact() {
     return (
-        <section id="contact" className="py-10 md:py-15 scroll-mt-16">
+        <section id="contact" className="py-8 md:py-12 scroll-mt-16">
             <SectionCard>
                 <SectionHeading>Contact</SectionHeading>
                 <div className="flex justify-center">
