@@ -38,7 +38,21 @@
 - `linkedin`: your LinkedIn profile URL
 
 
-## 3. Scroll-in Animations
+## 3. Standardize Styling to Tailwind
+
+**Goal:** Remove the mix of regular CSS and Tailwind utility classes. Use Tailwind exclusively for all component styles.
+
+**Why:** Currently `index.css` has named classes (`.nav-link`, `.project-card`, `.container`, etc.) while JSX uses Tailwind utilities inline. Mixing means styles live in two places, making debugging harder.
+
+**Scope:**
+- Convert all named CSS classes in `index.css` to Tailwind utilities in each component
+- Keep only truly global rules in `index.css` (e.g., `scroll-behavior`, `font-family` on `body`)
+- Affects: `Nav.jsx`, `About.jsx`, `Skills.jsx`, `Projects.jsx`, `Contact.jsx`, `Header.jsx`
+
+**Note:** Do in a dedicated session — touches every component.
+
+
+## 4. Scroll-in Animations
 
 **Status:** Undecided — fill in this section when ready.
 

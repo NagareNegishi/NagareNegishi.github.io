@@ -2,9 +2,10 @@
 
 | # | Feature | Status | Notes |
 |---|---------|--------|-------|
-| 1 | Navigation bar | Not started | See plan.md §1 |
+| 1 | Navigation bar | Done | Sticky nav, anchor links, soft blue-gray bg, pill hover style |
 | 2 | Social links in header | Done | IconLink component, react-icons/fa, added to Header + Contact |
-| 3 | Scroll-in animations | Planning | Scope not decided yet — see plan.md §3 |
+| 3 | Standardize styling to Tailwind | Not started | See plan.md §3 — dedicated session needed |
+| 4 | Scroll-in animations | Planning | Scope not decided yet — see plan.md §4 |
 
 ## Decisions log
 
