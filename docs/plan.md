@@ -70,17 +70,11 @@
 
 ## 3b. SectionCard Visual Polish
 
-**Status:** Not started — start here next session
+**Status:** Done
 
-**Goal:** Style the white section cards that wrap each content section.
+**Goal:** Style the section cards that wrap each content section.
 
-**Current state:** `SectionCard.jsx` has two class strings — the styled version is commented out, the invisible version is active. Uncomment to restore the card.
-
-**Decisions to make:**
-- Padding inside the card (`py-*`) vs. padding on the section element (gap between cards)
-- Shadow intensity (`shadow-sm`, `shadow`, `shadow-md`)
-- Corner rounding (`rounded-lg`, `rounded-xl`, `rounded-2xl`)
-- Gap between cards on the gray background
+**Result:** `border border-gray-200 shadow-sm rounded-lg py-8 px-8` — no bg fill, inherits page gray. Section gap reduced to `py-8 md:py-12` across all sections.
 
 
 ## 4. Scroll-in Animations
