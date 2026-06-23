@@ -1,12 +1,13 @@
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { personalInfo } from '../data/personalInfo'
 import IconLink from './IconLink'
+import SectionCard from './SectionCard'
 import SectionHeading from './SectionHeading'
 
 function Contact() {
     return (
         <section id="contact" className="py-10 md:py-15 scroll-mt-16">
-            <div className="max-w-[1200px] mx-auto px-5">
+            <SectionCard>
                 <SectionHeading>Contact</SectionHeading>
                 <div className="flex justify-center">
                     <ul className="list-none flex flex-col gap-[10px] items-start">
@@ -16,7 +17,7 @@ function Contact() {
                         <li>{personalInfo.location}</li>
                     </ul>
                 </div>
-            </div>
+            </SectionCard>
         </section>
     )
 }

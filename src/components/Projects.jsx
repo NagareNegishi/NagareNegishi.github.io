@@ -1,10 +1,11 @@
 import { gameProjects, softwareProjects } from '../data/projects';
+import SectionCard from './SectionCard';
 import SectionHeading from './SectionHeading';
 
 function Projects() {
     return (
         <section id="projects" className="py-10 md:py-15 scroll-mt-16">
-            <div className="max-w-[1200px] mx-auto px-5">
+            <SectionCard>
                 <div className="mb-8">
                     <SectionHeading>Featured Projects</SectionHeading>
                     <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[30px]">
@@ -21,7 +22,7 @@ function Projects() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </SectionCard>
         </section>
     )
 }
