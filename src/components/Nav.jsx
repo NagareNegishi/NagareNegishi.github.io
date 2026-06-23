@@ -8,9 +8,18 @@ function Nav() {
         // threshold fires the callback at each listed ratio
         const observer = new IntersectionObserver(
             (entries) => {
+                // update each section's current ratio in the map
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) setActive(entry.target.id)
+                    ratiosRef.current.set(entry.target.id, entry.intersectionRatio)
                 })
+
+                // pick the section with the highest visible ratio
+                let maxId = ''
+                let maxRatio = 0
+                ratiosRef.current.forEach((ratio, id) => {
+                    if (ratio > maxRatio) { maxRatio = ratio; maxId = id }
+                })
+                if (maxId) setActive(maxId)
             },
             { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1.0] }
         )
