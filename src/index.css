@@ -113,14 +113,20 @@ section h2 {
     transition: background-color 0.2s;
 }
 
+@keyframes nav-pop {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
 .nav-link:hover {
-    background-color: #dce8f5;  /* deeper blue-gray pill on hover */
-    color: #0066cc;
+    background-color: #dce8f5;
+    animation: nav-pop 0.25s ease-out;  /* plays once on hover entry, then stops */
 }
 
 /* Applied to whichever link matches the currently visible section */
 .nav-link-active {
-    background-color: #dce8f5;
+    background-color: #c8dcf2;
     color: #0066cc;
     font-weight: 600;
 }
