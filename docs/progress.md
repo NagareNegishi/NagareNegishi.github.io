@@ -6,6 +6,7 @@
 | 1b | Navigation bar — active highlight | Done | intersectionRatio + 6-threshold IO; highest-ratio section wins; box-shadow glow on active pill |
 | 2 | Social links in header | Done | IconLink component, react-icons/fa, added to Header + Contact |
 | 3 | Standardize styling to Tailwind | Done | All named CSS classes removed; `@layer base` for body/headings; `@theme` for nav-pop animation |
+| 3b | SectionCard visual polish | Not started | **Start here next session** — `SectionCard.jsx` has styles commented out; dial in bg, rounding, shadow, spacing |
 | 4 | Scroll-in animations | Planning | Scope not decided yet — see plan.md §4 |
 
 ## Decisions log
