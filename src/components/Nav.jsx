@@ -1,17 +1,18 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 function Nav() {
     const [active, setActive] = useState('')
+    const ratiosRef = useRef(new Map())
 
     useEffect(() => {
-        // rootMargin shrinks the trigger zone to a band near the top — only one section active at a time
+        // threshold fires the callback at each listed ratio
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) setActive(entry.target.id)
                 })
             },
-            { rootMargin: '-40% 0px -55% 0px' }
+            { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1.0] }
         )
 
         document.querySelectorAll('section[id]').forEach(s => observer.observe(s))
