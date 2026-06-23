@@ -1,5 +1,4 @@
-// const cardStyle = "max-w-[1200px] mx-auto px-8 bg-white rounded-xl shadow-sm"
-const cardStyle = "max-w-[1200px] mx-auto px-8"
+const cardStyle = "max-w-[1200px] mx-auto px-8 py-8 rounded-lg border border-gray-200 shadow-sm"
 
 function SectionCard({ children }) {
     return (
