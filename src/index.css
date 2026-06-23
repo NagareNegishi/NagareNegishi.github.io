@@ -1,6 +1,11 @@
 @import "tailwindcss";
 /* @import "../styles/main.css"; */
 
+/* Smooth scroll: applies to all anchor link jumps on the page */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
@@ -23,6 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Section styling */
 section {
     padding: 60px 0;
+    /* Offsets jump target so sticky nav doesn't cover the section heading */
+    scroll-margin-top: 64px;
 }
 
 section h2 {
@@ -90,6 +97,17 @@ section h2 {
     border-radius: 16px;
     font-size: 0.85em;
     font-weight: 500;
+}
+
+/* Nav bar */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0066cc;
 }
 
 /* Responsive design */
