@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading';
 function Projects() {
     return (
         <section id="projects" className="projects">
-            <div className="container">
+            <div className="max-w-[1200px] mx-auto px-5">
                 <div className="mb-8">
                     <SectionHeading>Featured Projects</SectionHeading>
                     <div className="project-grid">

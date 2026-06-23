@@ -6,7 +6,7 @@ import SectionHeading from './SectionHeading'
 function Contact() {
     return (
         <section id="contact" className="contact">
-            <div className="container">
+            <div className="max-w-[1200px] mx-auto px-5">
                 <SectionHeading>Contact</SectionHeading>
                 <div className="flex justify-center">
                     <ul className="list-none flex flex-col gap-[10px] items-start">

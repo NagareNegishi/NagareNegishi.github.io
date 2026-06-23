@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 function Skills() {
     return (
         <section id="skills" className="skills">
-            <div className="container">
+            <div className="max-w-[1200px] mx-auto px-5">
                 <SectionHeading>Technical Skills</SectionHeading>
                 <div className="skills-grid">
                     {skills.map((skillCategory, index) => (

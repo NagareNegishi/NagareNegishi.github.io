@@ -33,7 +33,7 @@ function Nav() {
     return (
         // sticky: scrolls with page until it hits the top, then locks — unlike fixed which is always locked
         <nav className="nav sticky top-0 z-10 shadow-sm">
-            <div className="container flex gap-8 py-3">
+            <div className="max-w-[1200px] mx-auto px-5 flex gap-8 py-3">
                 {/* About scrolls to the header */}
                 <a href="#header"   className={`nav-link ${active === 'header'   ? 'nav-link-active' : ''}`}>About</a>
                 <a href="#skills"   className={`nav-link ${active === 'skills'   ? 'nav-link-active' : ''}`}>Skills</a>
