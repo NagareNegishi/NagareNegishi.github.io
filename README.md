@@ -10,7 +10,7 @@ Previously interned at Aviat Networks, working on legacy C systems in an Agile t
 
 ## Featured Projects
 
-### Job Application Tracker (2026 — Ongoing)
+### Job Application Tracker (2026 - Ongoing)
 Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers, deployed on AWS.
 - ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
 - React + TypeScript frontend with TanStack Query, table and Kanban views with drag-and-drop
@@ -75,7 +75,6 @@ Tower defense with dynamic difficulty system and modular architecture
 - 🌐 [nagarenegishi.com](https://nagarenegishi.com)
 - 💼 [LinkedIn](https://linkedin.com/in/nagare-negishi)
 - 🌏 Auckland, New Zealand
-<!-- - 📱 021-089-84570 -->
 
 ## Website Status
 [![GitHub Pages](https://img.shields.io/github/deployments/NagareNegishi/NagareNegishi.github.io/github-pages)](https://NagareNegishi.github.io)
