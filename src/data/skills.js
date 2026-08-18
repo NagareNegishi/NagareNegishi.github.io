@@ -4,11 +4,11 @@ export const skills = [
     items: [
         "Java",
         "C#",
-        "Rust",
-        "C/C++",
         "TypeScript/JavaScript",
+        "C/C++",
         "Python",
-        "GDScript"
+        "GDScript",
+        "Rust"
     ]
     },
     {
