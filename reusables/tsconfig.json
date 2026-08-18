@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@/components/ui/*": ["./shadcn/*"],
+      "@/lib/utils": ["./util/cn.ts"],
+      "@/utils/*": ["./util/*"]
+    }
+  },
+  "include": ["component", "shadcn", "util", "vitest.config.ts"]
+}
