@@ -4,10 +4,11 @@ export const skills = [
     items: [
         "Java",
         "C#",
+        "Rust",
         "C/C++",
         "TypeScript/JavaScript",
-        "Python (Prior Experience)",
-        "GDScript (\"Python-like\" language)"
+        "Python",
+        "GDScript"
     ]
     },
     {
@@ -25,13 +26,12 @@ export const skills = [
     category: "Technologies & Frameworks",
     items: [
         "Node.js, Express",
-        "Hibernate, JDBC, SQL (PostgreSQL, Supabase)",
+        "Hibernate, JDBC",
+        "SQL, PostgreSQL, SQLite",
         "ASP.NET Core, EF Core, ASP.NET Identity",
-        "React, React Native, Tailwind",
+        "React, React Native, Tailwind, Tauri",
         "Claude API, REST APIs",
-        "AWS (EC2, S3, RDS)",
-        "Unreal Engine 5, Godot",
-        "Figma, UML"
+        "AWS (EC2, S3, RDS)"
     ]
     }
 ];
