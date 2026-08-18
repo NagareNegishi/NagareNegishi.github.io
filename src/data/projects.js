@@ -1,17 +1,6 @@
 export const softwareProjects = [
-        {
-    id: 1,
-    title: "Job Application Tracker",
-    tags: ["EF Core", "Identity", "AWS", "CI/CD", "Dev Containers", "Claude Code", "React", "TypeScript"],
-    description: "Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers",
-    links: {
-        demo: "https://jobtracker.nagarenegishi.com/jobs/",
-        demoLabel: "Live Demo",
-        github: "https://github.com/NagareNegishi/Job-Application-Tracker"
-    }
-    },
     {
-    id: 2,
+    id: 1,
     title: "Company Verification",
     tags: [".NET 10", "C#", "NuGet", "REST API", "Adapter Pattern", "Architecture"],
     description: "Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, with an adapter-per-country design that adds new registries without touching core logic",
@@ -22,7 +11,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 3,
+    id: 2,
     title: "Pantry2Plate",
     tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
     description: "AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps",
@@ -33,7 +22,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 4,
+    id: 3,
     title: "Distributed Logging System",
     tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
     description: "Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX",
@@ -42,7 +31,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 5,
+    id: 4,
     title: "Coffee Finder",
     tags: ["JavaScript", "SQL", "API Integration", "Docker"],
     description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
@@ -53,7 +42,7 @@ export const softwareProjects = [
     }
     },
     {
-    id: 6,
+    id: 5,
     title: "Larry Croft's Adventures",
     tags: ["Java", "OOP", "Software Design", "Group Project"],
     description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
