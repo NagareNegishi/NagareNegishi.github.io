@@ -4,8 +4,19 @@ import { useState, useEffect, useRef } from 'react'
 const linkBase = "no-underline text-[#333] font-medium py-[6px] px-[14px] rounded-md transition-colors duration-200 hover:bg-[#dce8f5] hover:animate-nav-pop"
 const linkActive = "bg-[#c8dcf2] text-[#0066cc] font-semibold shadow-[0_0_2px_1px_#a0c4e0,0_0_5px_1px_rgba(138,181,221,0.2)]"
 
+// About uses #header because it scrolls to the header element
+const links = [
+    { href: '#header',   id: 'header',   label: 'About'    },
+    { href: '#skills',   id: 'skills',   label: 'Skills'   },
+    { href: '#products', id: 'products', label: 'Products' },
+    { href: '#projects', id: 'projects', label: 'Projects' },
+    { href: '#game-dev', id: 'game-dev', label: 'Games'    },
+    { href: '#contact',  id: 'contact',  label: 'Contact'  },
+]
+
 function Nav() {
     const [active, setActive] = useState('')
+    const [open, setOpen] = useState(false)
     const ratiosRef = useRef(new Map())
 
     useEffect(() => {
@@ -37,45 +48,41 @@ function Nav() {
     return (
         // sticky: scrolls with page until it hits the top, then locks — unlike fixed which is always locked
         <nav className="bg-[#f0f4f8] sticky top-0 z-10 shadow-sm">
-            <div className="max-w-[1200px] mx-auto px-5 flex gap-8 py-2">
-                {/* About scrolls to the header */}
-                <a
-                    href="#header"
-                    className={`${linkBase} ${active === 'header' ? linkActive : ''}`}
+            <div className="max-w-[1200px] mx-auto px-5 flex items-center justify-between lg:justify-start py-2">
+                {/* Desktop: full link row */}
+                <div className="hidden lg:flex gap-8">
+                    {links.map(({ href, id, label }) => (
+                        <a key={id} href={href} className={`${linkBase} ${active === id ? linkActive : ''}`}>
+                            {label}
+                        </a>
+                    ))}
+                </div>
+
+                {/* Mobile/small window: hamburger button */}
+                <button
+                    className="lg:hidden p-2 text-[#333] text-xl leading-none"
+                    onClick={() => setOpen(o => !o)}
+                    aria-label="Toggle menu"
                 >
-                    About
-                </a>
-                <a
-                    href="#skills"
-                    className={`${linkBase} ${active === 'skills' ? linkActive : ''}`}
-                >
-                    Skills
-                </a>
-                <a
-                    href="#products"
-                    className={`${linkBase} ${active === 'products' ? linkActive : ''}`}
-                >
-                    Products
-                </a>
-                <a
-                    href="#projects"
-                    className={`${linkBase} ${active === 'projects' ? linkActive : ''}`}
-                >
-                    Projects
-                </a>
-                <a
-                    href="#game-dev"
-                    className={`${linkBase} ${active === 'game-dev' ? linkActive : ''}`}
-                >
-                    Games
-                </a>
-                <a
-                    href="#contact"
-                    className={`${linkBase} ${active === 'contact' ? linkActive : ''}`}
-                >
-                    Contact
-                </a>
+                    {open ? '✕' : '☰'}
+                </button>
             </div>
+
+            {/* Dropdown for small screens */}
+            {open && (
+                <div className="lg:hidden bg-[#f0f4f8] border-t border-gray-200 px-5 py-2 flex flex-col gap-1">
+                    {links.map(({ href, id, label }) => (
+                        <a
+                            key={id}
+                            href={href}
+                            className={`${linkBase} ${active === id ? linkActive : ''}`}
+                            onClick={() => setOpen(false)}
+                        >
+                            {label}
+                        </a>
+                    ))}
+                </div>
+            )}
         </nav>
     )
 }
