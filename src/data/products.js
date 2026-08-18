@@ -3,7 +3,7 @@ export const products = [
         id: 1,
         title: "Job Application Tracker",
         images: [null, null, null],
-        description: "Web app for tracking job applications through every stage — from wishlist to offer.",
+        description: "Web app for tracking job applications through wishlist to offer.",
         features: [
             "Status pipeline with Kanban board view",
             "Document upload per application",
