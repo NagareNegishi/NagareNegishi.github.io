@@ -6,8 +6,9 @@ const linkActive = "bg-[#c8dcf2] text-[#0066cc] font-semibold shadow-[0_0_2px_1p
 
 // About uses #header because it scrolls to the header element
 const links = [
-    { href: '#header',   id: 'header',   label: 'About'    },
-    { href: '#skills',   id: 'skills',   label: 'Skills'   },
+    { href: '#header',       id: 'header',       label: 'About'     },
+    { href: '#what-i-bring', id: 'what-i-bring', label: 'Strengths' },
+    { href: '#skills',       id: 'skills',       label: 'Skills'    },
     { href: '#products', id: 'products', label: 'Products' },
     { href: '#projects', id: 'projects', label: 'Projects' },
     { href: '#game-dev', id: 'game-dev', label: 'Games'    },

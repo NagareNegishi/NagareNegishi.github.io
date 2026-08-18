@@ -5,6 +5,7 @@ import Nav from './components/Nav.jsx'
 import ProductSection from './components/ProductSection.jsx'
 import ProjectSection from './components/ProjectSection.jsx'
 import Skills from './components/Skills.jsx'
+import WhatIBring from './components/WhatIBring.jsx'
 import { softwareProjects, gameProjects } from './data/projects.js'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <main>
         <About />
+        <WhatIBring />
         <Skills />
         <ProductSection />
         <ProjectSection id="projects" title="Featured Projects" projects={softwareProjects} />
