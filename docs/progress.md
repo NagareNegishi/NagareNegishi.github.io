@@ -9,6 +9,7 @@
 | 3b | SectionCard visual polish | Done | Border + shadow-sm + rounded-lg + py-8; no bg change (inherits page gray); section gap reduced to py-8 md:py-12 |
 | 3c | Projects section split | Done | `ProjectCard.jsx` extracted; `ProjectSection.jsx` generic component; `Projects.jsx` deleted; Games link added to nav |
 | 4 | Scroll-in animations | Planning | Scope not decided yet — see plan.md §4 |
+| 5 | Products section | In Progress | `src/data/products.js` created; `ProductCard`, `ProductSection`, Nav + App edits still to do — see plan.md §5 |
 
 ## Decisions log
 

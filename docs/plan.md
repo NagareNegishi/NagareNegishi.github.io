@@ -77,6 +77,32 @@
 **Result:** `border border-gray-200 shadow-sm rounded-lg py-8 px-8` — no bg fill, inherits page gray. Section gap reduced to `py-8 md:py-12` across all sections.
 
 
+## 5. Products Section
+
+**Goal:** A dedicated section above "Featured Projects" for shipped, real-world products — visually distinct from the compact project card grid.
+
+**Decisions made:**
+- Layout: horizontal split card — image carousel left (~45%), content right (~55%), full section width; stacks vertically on mobile
+- Carousel: `<` `>` arrow buttons + dot indicators; plain `useState` index, no library
+- Content right side: title, short description paragraph, features list (✓ bullets), tech tags, links
+- No status badge — the Live Demo link already communicates deployment
+- Stub images: `null` entries in the array; component renders a grey placeholder so carousel navigation still works visually
+- Job Application Tracker moves from `softwareProjects` to `products`
+
+**Files to create:**
+- `src/data/products.js` — ✅ done (Job Application Tracker, 3 stub images, 7 features)
+- `src/components/ProductCard.jsx` — horizontal split with carousel, imports `useState`
+- `src/components/ProductSection.jsx` — stacked `flex-col gap-6`, reuses `SectionCard` + `SectionHeading`
+
+**Files to edit:**
+- `src/App.jsx` — import `ProductSection`, render it before `<ProjectSection id="projects" …>`
+- `src/components/Nav.jsx` — add `#products` / "Products" link before "Projects"
+- `src/data/projects.js` — remove Job Application Tracker (id 1) from `softwareProjects`
+
+**When real screenshots are ready:**
+- Replace `null` entries in `images` array with paths under `public/images/` (e.g. `"/images/jat-kanban.png"`)
+
+
 ## 4. Scroll-in Animations
 
 **Status:** Undecided — fill in this section when ready.

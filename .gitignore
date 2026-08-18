@@ -22,3 +22,35 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Development notes and sample files
+notes/
+memory/
+SampleFile/
+
+# Claude code
+creds.json
+.claude/skills/owasp-scan/findings.json
+.github/drafts/
+
+# Session baton — session-end/session-start handoff; local per-session state.
+# The template (docs/session/template.md) stays tracked to hold the shape.
+docs/session/baton.md
+
+# Subagent prompt captures + deferred analysis from build-orchestration
+# sessions — local data; the README and capture template stay tracked
+build-orchestration/prompt-log/*
+!build-orchestration/prompt-log/README.md
+!build-orchestration/prompt-log/_template.md
+
+# Escalation strike count — live scratch
+build-orchestration/strike-count.md
+
+# SubagentStop route-guard loop-guard — live scratch
+build-orchestration/route-block-count
+
+# Per-subagent path-jail scope root (agent-scope-jail.sh); throwaway staging + log
+.agent-scope/
+
+# Bash-agent isolation worktrees (agent-worktree.sh); throwaway
+.agent-worktrees/
