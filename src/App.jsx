@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <Nav />
-      <main>
+      <main className="flex flex-col gap-4">
         <About />
         <WhatIBring />
         <Skills />
