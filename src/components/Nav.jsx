@@ -52,6 +52,12 @@ function Nav() {
                     Skills
                 </a>
                 <a
+                    href="#products"
+                    className={`${linkBase} ${active === 'products' ? linkActive : ''}`}
+                >
+                    Products
+                </a>
+                <a
                     href="#projects"
                     className={`${linkBase} ${active === 'projects' ? linkActive : ''}`}
                 >
