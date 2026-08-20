@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 function About() {
     return (
         <section className="py-8 md:py-12 scroll-mt-16">
-            <SectionCard>
+            <SectionCard className="max-w-3xl">
                 <SectionHeading>About Me</SectionHeading>
                 { personalInfo.about.map((paragraph, index) => (
                     <p key={index}>{ paragraph }</p>

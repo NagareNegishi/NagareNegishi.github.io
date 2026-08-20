@@ -5,7 +5,7 @@ import SectionHeading from "./SectionHeading";
 function WhatIBring() {
     return (
         <section id="what-i-bring" className="py-8 md:py-12 scroll-mt-16">
-            <SectionCard>
+            <SectionCard className="max-w-3xl">
                 <SectionHeading>What I Bring</SectionHeading>
                 <ul className="flex flex-col gap-4 mt-5">
                     {strengths.map((text, index) => (
