@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         title: "Job Application Tracker",
-        images: [null, null, null],
+        images: ["/images/table.png", "/images/kanban.png", "/images/analysis.png"],
         description: "Web app for tracking job applications through wishlist to offer.",
         features: [
             "Table and Kanban board views",
