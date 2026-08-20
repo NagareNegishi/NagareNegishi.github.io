@@ -103,6 +103,36 @@
 - Replace `null` entries in `images` array with paths under `public/images/` (e.g. `"/images/jat-kanban.png"`)
 
 
+## 6. ImageDisplay Enhancement
+
+**Goal:** Bring the carousel and image display up to modern standards — interactive, polished, and useful for recruiters examining screenshots closely.
+
+**Known issues:**
+- Arrow buttons overlay on top of the image, blocking content near the edges
+- No way to examine an image closely — no fullscreen or lightbox mode
+- No visual feedback on hover for arrows or dot indicators
+- Slide change is instant — no transition animation
+- No image counter ("2 / 3") — dots alone are ambiguous on small sets
+
+**Features to add:**
+- Smooth fade or slide transition between carousel images
+- Lightbox modal — click image to open full-size overlay, close with Escape or clicking outside
+- Keyboard navigation (← →) when carousel is focused or lightbox is open
+- Image counter text ("1 / 3") alongside dot indicators
+- Arrows repositioned to sit outside the image, or appear only on hover to avoid covering content
+- Cursor change (`cursor-zoom-in`) on image to signal it is clickable
+- Loading skeleton while image fetches (replace placeholder SVG with a shimmer)
+
+**Decisions to make before building:**
+- Arrows: always outside image vs. overlaid but only on hover?
+- Lightbox: full viewport overlay or a centered modal with backdrop?
+- Transition style: fade (opacity) or slide (translateX)?
+- Scope: carousel mode only, or also single and grid modes get lightbox?
+
+**Files affected:**
+- `src/components/ImageDisplay.jsx` — all changes live here
+
+
 ## 4. Scroll-in Animations
 
 **Status:** Undecided — fill in this section when ready.

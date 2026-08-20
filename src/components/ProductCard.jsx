@@ -4,7 +4,7 @@ import Tag from './Tag';
 
 function ProductCard({ product }) {
     return (
-        <div className="flex flex-col md:flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-[45%]">
                 <ImageDisplay
                     images={product.images}
