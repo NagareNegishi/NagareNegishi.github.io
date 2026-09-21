@@ -105,32 +105,9 @@
 
 ## 6. ImageDisplay Enhancement
 
-**Goal:** Bring the carousel and image display up to modern standards — interactive, polished, and useful for recruiters examining screenshots closely.
+**Status:** Done
 
-**Known issues:**
-- Arrow buttons overlay on top of the image, blocking content near the edges
-- No way to examine an image closely — no fullscreen or lightbox mode
-- No visual feedback on hover for arrows or dot indicators
-- Slide change is instant — no transition animation
-- No image counter ("2 / 3") — dots alone are ambiguous on small sets
-
-**Features to add:**
-- Smooth fade or slide transition between carousel images
-- Lightbox modal — click image to open full-size overlay, close with Escape or clicking outside
-- Keyboard navigation (← →) when carousel is focused or lightbox is open
-- Image counter text ("1 / 3") alongside dot indicators
-- Arrows repositioned to sit outside the image, or appear only on hover to avoid covering content
-- Cursor change (`cursor-zoom-in`) on image to signal it is clickable
-- Loading skeleton while image fetches (replace placeholder SVG with a shimmer)
-
-**Decisions made:**
-- Arrows: outside image, always visible (never overlaid)
-- Lightbox: full viewport overlay
-- Transition: fade (opacity)
-- Scope: carousel mode only for lightbox (single and grid unchanged)
-
-**Files affected:**
-- `src/components/ImageDisplay.jsx` — all changes live here
+Outside arrows, 250ms fade transition, image counter, full-viewport lightbox (close via Escape or backdrop click), in-lightbox prev/next arrows with keyboard ← → support. All changes in `src/components/ImageDisplay.jsx`.
 
 
 ## 4. Scroll-in Animations
