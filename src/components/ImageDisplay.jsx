@@ -83,15 +83,18 @@ function Carousel({ images, alt, aspectRatio }) {
                 )}
             </div>
             {count > 1 && (
-                <div className="flex justify-center gap-1.5 mt-2">
-                    {images.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => goTo(i)}
-                            className={`w-2 h-2 rounded-full transition-colors ${i === index ? 'bg-gray-600' : 'bg-gray-300'}`}
-                            aria-label={`Go to image ${i + 1}`}
-                        />
-                    ))}
+                <div className="flex items-center justify-center gap-2 mt-2">
+                    <span className="text-xs text-gray-400">{index + 1} / {count}</span>
+                    <div className="flex gap-1.5">
+                        {images.map((_, i) => (
+                            <button
+                                key={i}
+                                onClick={() => goTo(i)}
+                                className={`w-2 h-2 rounded-full transition-colors ${i === index ? 'bg-gray-600' : 'bg-gray-300'}`}
+                                aria-label={`Go to image ${i + 1}`}
+                            />
+                        ))}
+                    </div>
                 </div>
             )}
         </div>
