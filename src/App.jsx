@@ -6,7 +6,7 @@ import ProductSection from './components/ProductSection.jsx'
 import ProjectSection from './components/ProjectSection.jsx'
 import Skills from './components/Skills.jsx'
 import WhatIBring from './components/WhatIBring.jsx'
-import { softwareProjects, gameProjects } from './data/projects.js'
+import { softwareProjects, creativeProjects } from './data/projects.js'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Skills />
         <ProductSection />
         <ProjectSection id="projects" title="Featured Projects" projects={softwareProjects} />
-        <ProjectSection id="game-dev" title="Game Development" projects={gameProjects} />
+        <ProjectSection id="game-dev" title="Games & Systems" projects={creativeProjects} />
         <Contact />
       </main>
     </>

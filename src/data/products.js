@@ -1,23 +1,22 @@
 export const products = [
     {
         id: 1,
-        title: "Job Application Tracker",
+        title: "Kajitor",
         images: ["/images/table.png", "/images/kanban.png", "/images/analysis.png"],
-        description: "Web app for tracking job applications through wishlist to offer.",
+        description: "Track job applications from wishlist to offer in one place.",
         features: [
-            "Table and Kanban board views",
+            "Table and Kanban board views, drag cards between stages",
             "Attach CV and cover letter per application",
-            "Paste a job listing and fields fill in automatically",
-            "AI job insights and interview prep",
-            "Analytics dashboard to see how your job search is going",
-            "Dark mode and colour themes to suit your preference",
+            "AI auto-fill: paste a job listing and fields populate automatically",
+            "AI job insights: alignment score, skill gaps, interview prep",
+            "Analytics dashboard: funnel, weekly chart, stale applications",
+            "Dark mode and four colour themes",
             "Demo mode, no account required",
         ],
-        tags: ["ASP.NET Core", "React", "TypeScript", "PostgreSQL", "AWS", "Docker", "CI/CD"],
+        tags: ["ASP.NET Core", "React", "TypeScript", "PostgreSQL", "Auth + MFA", "Stripe", "Claude API", "CI/CD"],
         links: {
-            demo: "https://jobtracker.nagarenegishi.com/jobs/",
-            demoLabel: "Live Demo",
-            github: "https://github.com/NagareNegishi/Job-Application-Tracker"
+            demo: "https://kajitor.com",
+            demoLabel: "Live App",
         }
     }
 ];

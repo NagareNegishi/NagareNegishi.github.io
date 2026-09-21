@@ -1,106 +1,133 @@
 export const softwareProjects = [
     {
-    id: 1,
-    title: "Company Verification",
-    tags: [".NET 10", "C#", "NuGet", "REST API", "Adapter Pattern", "Architecture"],
-    description: "Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, with an adapter-per-country design that adds new registries without touching core logic",
-    links: {
-        demo: "https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ",
-        demoLabel: "API Demo",
-        github: "https://github.com/NagareNegishi/company-verification"
-    }
+        id: 1,
+        title: "Job Application Tracker",
+        tags: ["ASP.NET Core", "React", "TypeScript", "PostgreSQL", "AWS", "Docker", "CI/CD"],
+        description: "Core built by hand, the rest scaled with Claude Code running in a controlled sandbox. Open-source; later forked into Kajitor.",
+        links: {
+            github: "https://github.com/NagareNegishi/Job-Application-Tracker"
+        }
     },
     {
-    id: 2,
-    title: "Pantry2Plate",
-    tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
-    description: "AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps",
-    links: {
-        demo: "http://nagarenegishi.com/Pantry2Plate/",
-        demoLabel: "UI Demo",
-        github: "https://github.com/NagareNegishi/Pantry2Plate",
-    }
+        id: 2,
+        title: "Company Verification",
+        tags: [".NET 10", "C#", "NuGet", "REST API", "Adapter Pattern"],
+        description: "Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, with an adapter-per-country design that adds new registries without touching core logic",
+        links: {
+            demo: "https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ",
+            demoLabel: "API Demo",
+            github: "https://github.com/NagareNegishi/company-verification"
+        }
     },
     {
-    id: 3,
-    title: "Distributed Logging System",
-    tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
-    description: "Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX",
-    links: {
-        github: "https://github.com/NagareNegishi/Distributed-Logging-System"
-    }
+        id: 3,
+        title: "AI Dev Sandbox",
+        tags: ["Claude Code", "Docker", "Dev Containers", "Bash", "GitHub Actions"],
+        description: "Starting point for new projects that puts an AI coding agent under fixed rules and permissions from the first commit. Skills cover security checks, documentation, and version control. A build mode runs specialist subagents to implement, test, and review each feature in scope.",
+        links: {
+            github: "https://github.com/NagareNegishi/project-seed"
+        }
     },
     {
-    id: 4,
-    title: "Coffee Finder",
-    tags: ["JavaScript", "SQL", "API Integration", "Docker"],
-    description: "Location-based web application featuring interactive maps, geolocation services, and custom SQL functions for distance calculations",
-    links: {
-        demo: "https://nagarenegishi.com/Coffee-Finder/",
-        demoLabel: "Live Demo",
-        github: "https://github.com/NagareNegishi/Coffee-Finder",
-    }
+        id: 4,
+        title: "Pantry2Plate",
+        tags: ["TypeScript", "React", "Claude API", "Docker", "Express"],
+        description: "AI-powered recipe generator architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps",
+        links: {
+            demo: "http://nagarenegishi.com/Pantry2Plate/",
+            demoLabel: "UI Demo",
+            github: "https://github.com/NagareNegishi/Pantry2Plate",
+        }
     },
     {
-    id: 5,
-    title: "Larry Croft's Adventures",
-    tags: ["Java", "OOP", "Software Design", "Group Project"],
-    description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
-    links: {
-        github: "https://github.com/NagareNegishi/LarryCroftsAdventures"
-    }
+        id: 5,
+        title: "Distributed Logging System",
+        tags: ["Java", "REST API", "Hibernate", "Maven", "Docker"],
+        description: "Distributed logging system with custom HTTP log forwarder, test-driven development, graceful failure handling, and real-time monitoring via JMX",
+        links: {
+            github: "https://github.com/NagareNegishi/Distributed-Logging-System"
+        }
+    },
+    {
+        id: 6,
+        title: "Coffee Finder",
+        tags: ["JavaScript", "SQL", "PostgreSQL", "Supabase", "Leaflet"],
+        description: "Location-based web app that finds nearby coffee shops and sorts them by distance on an interactive map. Distance is calculated with custom SQL queries, not the map service.",
+        links: {
+            demo: "https://nagarenegishi.com/Coffee-Finder/",
+            demoLabel: "Live Demo",
+            github: "https://github.com/NagareNegishi/Coffee-Finder",
+        }
+    },
+    {
+        id: 7,
+        title: "Larry Croft's Adventures",
+        tags: ["Java", "OOP", "Software Design", "Group Project"],
+        description: "Object-oriented game development focused on design patterns, coordinated integration of 6 modules",
+        links: {
+            github: "https://github.com/NagareNegishi/LarryCroftsAdventures"
+        }
     }
 ];
 
 
-export const gameProjects = [
+export const creativeProjects = [
     {
-    id: 1,
-    title: "ChopChopServe",
-    tags: ["Godot", "JavaScript", "Multiplayer-Networking", "Group Project"],
-    description: "Competitive multiplayer cooking game featuring real-time network synchronization",
-    links: {
-        github: "https://github.com/NagareNegishi/ChopChopServe-Public"
-    }
+        id: 1,
+        title: "DJ App",
+        tags: ["C++20", "JUCE", "Node.js", "WebSocket", "CMake", "Docker"],
+        description: "Multi-user DJ app where one controller drives playback and every listener hears it in sync, each rendering audio from their own tracks so only state crosses the network. The audio callback is lock-free so network delays never stall playback.",
+        links: {
+            github: "https://github.com/NagareNegishi/DJ-App"
+        }
     },
     {
-    id: 2,
-    title: "Goblins' Fury",
-    tags: ["Godot", "Architecture", "Group Project"],
-    description: "Tower defense with dynamic difficulty system and modular architecture",
-    links: {
-        github: "https://github.com/NagareNegishi/Tower-Defense-CGRA252"
-    }
+        id: 2,
+        title: "ChopChopServe",
+        tags: ["Godot", "JavaScript", "Multiplayer Networking", "Group Project"],
+        description: "Competitive multiplayer cooking game featuring real-time network synchronization",
+        links: {
+            github: "https://github.com/NagareNegishi/ChopChopServe-Public"
+        }
     },
     {
-    id: 3,
-    title: "Bar'acuda",
-    tags: ["Godot", "Game Jam", "Group Project"],
-    description: "Interactive service management simulation (48hr Game Jam)",
-    links: {
-        demo: "https://games-for-people.itch.io/baracuda",
-        demoLabel: "Play Game",
-        github: "https://github.com/NagareNegishi/GGJ-Bar-acuda"
-    }
+        id: 3,
+        title: "OpenGL Rendering Projects",
+        tags: ["C++", "OpenGL", "Algorithms"],
+        description: "Implementations of core graphics techniques including ray tracing and boids flocking simulation",
+        links: {
+            github: "https://github.com/NagareNegishi/OpenGL-Ray-tracing"
+        }
     },
     {
-    id: 4,
-    title: "1 Fuji 2 Hawk 3 Nasubi",
-    tags: ["Unreal Engine", "Game Jam", "AI"],
-    description: "Top-down competitive collector with AI-controlled entities (48hr Game Jam)",
-    links: {
-        demo: "https://negimakushi.itch.io/1-fuji-2-hawk-3-nasubi",
-        demoLabel: "Play Game",
-        github: "https://github.com/NagareNegishi/Game-jam2"
-    }
+        id: 4,
+        title: "Goblins' Fury",
+        tags: ["Godot", "Architecture", "Group Project"],
+        description: "Tower defense with dynamic difficulty system and modular architecture",
+        links: {
+            github: "https://github.com/NagareNegishi/Tower-Defense-CGRA252"
+        }
     },
     {
-    id: 5,
-    title: "OpenGL Rendering Projects",
-    tags: ["C++", "OpenGL", "Algorithms"],
-    description: "Implementations of core graphics techniques including ray tracing and boids flocking simulation",
-    links: {
-        github: "https://github.com/NagareNegishi/OpenGL-Ray-tracing"
-    }
-    }
+        id: 5,
+        title: "Bar'acuda",
+        tags: ["Godot", "Game Jam", "Group Project"],
+        description: "Interactive service management simulation (48hr Game Jam)",
+        links: {
+            demo: "https://games-for-people.itch.io/baracuda",
+            demoLabel: "Play Game",
+            github: "https://github.com/NagareNegishi/GGJ-Bar-acuda"
+        }
+    },
+    {
+        id: 6,
+        title: "1 Fuji 2 Hawk 3 Nasubi",
+        tags: ["Unreal Engine", "Game Jam", "AI"],
+        description: "Top-down competitive collector with AI-controlled entities (48hr Game Jam)",
+        links: {
+            demo: "https://negimakushi.itch.io/1-fuji-2-hawk-3-nasubi",
+            demoLabel: "Play Game",
+            github: "https://github.com/NagareNegishi/Game-jam2"
+        }
+    },
 ];
