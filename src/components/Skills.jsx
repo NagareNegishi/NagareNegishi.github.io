@@ -13,11 +13,9 @@ function Skills() {
                             <h3 className="text-[1.3rem] mb-[15px]">{skillCategory.category}</h3>
                             <ul className="list-none">
                                 {skillCategory.items.map((item, itemIndex) => (
-                                    <li
-                                        className="relative mb-2.5 pl-5 before:content-['•'] before:absolute before:left-0"
-                                        key={itemIndex}
-                                    >
-                                        {item}
+                                    <li key={itemIndex} className="flex gap-2 mb-2.5">
+                                        <span className="shrink-0">•</span>
+                                        <span>{item}</span>
                                     </li>
                                 ))}
                             </ul>

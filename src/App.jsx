@@ -2,20 +2,24 @@ import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Header from './components/Header.jsx'
 import Nav from './components/Nav.jsx'
+import ProductSection from './components/ProductSection.jsx'
 import ProjectSection from './components/ProjectSection.jsx'
 import Skills from './components/Skills.jsx'
-import { softwareProjects, gameProjects } from './data/projects.js'
+import WhatIBring from './components/WhatIBring.jsx'
+import { softwareProjects, creativeProjects } from './data/projects.js'
 
 function App() {
   return (
     <>
       <Header />
       <Nav />
-      <main>
+      <main className="flex flex-col gap-4">
         <About />
+        <WhatIBring />
         <Skills />
+        <ProductSection />
         <ProjectSection id="projects" title="Featured Projects" projects={softwareProjects} />
-        <ProjectSection id="game-dev" title="Game Development" projects={gameProjects} />
+        <ProjectSection id="game-dev" title="Games & Systems" projects={creativeProjects} />
         <Contact />
       </main>
     </>

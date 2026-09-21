@@ -1,3 +1,5 @@
+import Tag from './Tag';
+
 function ProjectCard({ project }) {
     return (
         <div className="bg-white p-5 rounded-lg shadow-md">
@@ -5,12 +7,7 @@ function ProjectCard({ project }) {
             <div className="mt-2.5 mb-[15px]">
                 {/* index key is safe here, tags are static, never reordered */}
                 {project.tags.map((tag, index) => (
-                    <span
-                        className="inline-block bg-[#f0f0f0] text-[#555] py-1 px-3 my-0.5 mr-1 rounded-2xl text-[0.85em] font-medium"
-                        key={index}
-                    >
-                        {tag}
-                    </span>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </div>
             <p className="mb-[15px] text-[#666]">{project.description}</p>

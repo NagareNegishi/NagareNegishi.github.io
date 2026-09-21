@@ -7,7 +7,7 @@ import SectionHeading from './SectionHeading'
 function Contact() {
     return (
         <section id="contact" className="py-8 md:py-12 scroll-mt-16">
-            <SectionCard>
+            <SectionCard className="max-w-lg">
                 <SectionHeading>Contact</SectionHeading>
                 <div className="flex justify-center">
                     <ul className="list-none flex flex-col gap-[10px] items-start">
