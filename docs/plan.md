@@ -123,11 +123,11 @@
 - Cursor change (`cursor-zoom-in`) on image to signal it is clickable
 - Loading skeleton while image fetches (replace placeholder SVG with a shimmer)
 
-**Decisions to make before building:**
-- Arrows: always outside image vs. overlaid but only on hover?
-- Lightbox: full viewport overlay or a centered modal with backdrop?
-- Transition style: fade (opacity) or slide (translateX)?
-- Scope: carousel mode only, or also single and grid modes get lightbox?
+**Decisions made:**
+- Arrows: outside image, always visible (never overlaid)
+- Lightbox: full viewport overlay
+- Transition: fade (opacity)
+- Scope: carousel mode only for lightbox (single and grid unchanged)
 
 **Files affected:**
 - `src/components/ImageDisplay.jsx` — all changes live here

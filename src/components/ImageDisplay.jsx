@@ -49,33 +49,37 @@ function Carousel({ images, alt, aspectRatio }) {
     };
 
     return (
-        <div className="relative select-none">
-            <div onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-                <ImageSlot src={images[index]} alt={`${alt} — image ${index + 1} of ${count}`} aspectRatio={aspectRatio} />
-            </div>
-            {count > 1 && (
-                <>
+        <div className="select-none">
+            <div className="flex items-center gap-2">
+                {count > 1 && (
                     <button
                         onClick={goPrev}
-                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full w-8 h-8 flex items-center justify-center text-xl leading-none"
+                        className="shrink-0 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-xl leading-none transition-colors"
                         aria-label="Previous image"
                     >‹</button>
+                )}
+                <div className="flex-1" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+                    <ImageSlot src={images[index]} alt={`${alt} — image ${index + 1} of ${count}`} aspectRatio={aspectRatio} />
+                </div>
+                {count > 1 && (
                     <button
                         onClick={goNext}
-                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white rounded-full w-8 h-8 flex items-center justify-center text-xl leading-none"
+                        className="shrink-0 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-xl leading-none transition-colors"
                         aria-label="Next image"
                     >›</button>
-                    <div className="flex justify-center gap-1.5 mt-2">
-                        {images.map((_, i) => (
-                            <button
-                                key={i}
-                                onClick={() => setIndex(i)}
-                                className={`w-2 h-2 rounded-full transition-colors ${i === index ? 'bg-gray-600' : 'bg-gray-300'}`}
-                                aria-label={`Go to image ${i + 1}`}
-                            />
-                        ))}
-                    </div>
-                </>
+                )}
+            </div>
+            {count > 1 && (
+                <div className="flex justify-center gap-1.5 mt-2">
+                    {images.map((_, i) => (
+                        <button
+                            key={i}
+                            onClick={() => setIndex(i)}
+                            className={`w-2 h-2 rounded-full transition-colors ${i === index ? 'bg-gray-600' : 'bg-gray-300'}`}
+                            aria-label={`Go to image ${i + 1}`}
+                        />
+                    ))}
+                </div>
             )}
         </div>
     );
