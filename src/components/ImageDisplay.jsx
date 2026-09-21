@@ -62,7 +62,9 @@ function Lightbox({ src, alt, onClose }) {
 function Carousel({ images, alt, aspectRatio }) {
     const [index, setIndex] = useState(0);
     const [fading, setFading] = useState(false);
+    const [lightboxOpen, setLightboxOpen] = useState(false);
     const touchStartX = useRef(null);
+    const closeLight = useCallback(() => setLightboxOpen(false), []);
     const count = images.length;
 
     const goTo = (newIndex) => {
@@ -99,7 +101,12 @@ function Carousel({ images, alt, aspectRatio }) {
                     onTouchStart={handleTouchStart}
                     onTouchEnd={handleTouchEnd}
                 >
-                    <ImageSlot src={images[index]} alt={`${alt} — image ${index + 1} of ${count}`} aspectRatio={aspectRatio} />
+                    <div
+                        className={images[index] ? 'cursor-zoom-in' : ''}
+                        onClick={() => images[index] && setLightboxOpen(true)}
+                    >
+                        <ImageSlot src={images[index]} alt={`${alt} — image ${index + 1} of ${count}`} aspectRatio={aspectRatio} />
+                    </div>
                 </div>
                 {count > 1 && (
                     <button
@@ -123,6 +130,13 @@ function Carousel({ images, alt, aspectRatio }) {
                         ))}
                     </div>
                 </div>
+            )}
+            {lightboxOpen && (
+                <Lightbox
+                    src={images[index]}
+                    alt={`${alt} — image ${index + 1} of ${count}`}
+                    onClose={closeLight}
+                />
             )}
         </div>
     );
