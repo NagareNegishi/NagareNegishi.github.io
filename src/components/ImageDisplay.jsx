@@ -34,11 +34,20 @@ function ImageSlot({ src, alt, aspectRatio }) {
 
 function Carousel({ images, alt, aspectRatio }) {
     const [index, setIndex] = useState(0);
+    const [fading, setFading] = useState(false);
     const touchStartX = useRef(null);
     const count = images.length;
 
-    const goPrev = () => setIndex(i => (i - 1 + count) % count);
-    const goNext = () => setIndex(i => (i + 1) % count);
+    const goTo = (newIndex) => {
+        setFading(true);
+        setTimeout(() => {
+            setIndex(newIndex);
+            setFading(false);
+        }, 250);
+    };
+
+    const goPrev = () => goTo((index - 1 + count) % count);
+    const goNext = () => goTo((index + 1) % count);
 
     const handleTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
     const handleTouchEnd = (e) => {
@@ -58,7 +67,11 @@ function Carousel({ images, alt, aspectRatio }) {
                         aria-label="Previous image"
                     >‹</button>
                 )}
-                <div className="flex-1" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+                <div
+                    className={`flex-1 transition-opacity duration-[250ms] ${fading ? 'opacity-0' : 'opacity-100'}`}
+                    onTouchStart={handleTouchStart}
+                    onTouchEnd={handleTouchEnd}
+                >
                     <ImageSlot src={images[index]} alt={`${alt} — image ${index + 1} of ${count}`} aspectRatio={aspectRatio} />
                 </div>
                 {count > 1 && (
@@ -74,7 +87,7 @@ function Carousel({ images, alt, aspectRatio }) {
                     {images.map((_, i) => (
                         <button
                             key={i}
-                            onClick={() => setIndex(i)}
+                            onClick={() => goTo(i)}
                             className={`w-2 h-2 rounded-full transition-colors ${i === index ? 'bg-gray-600' : 'bg-gray-300'}`}
                             aria-label={`Go to image ${i + 1}`}
                         />
