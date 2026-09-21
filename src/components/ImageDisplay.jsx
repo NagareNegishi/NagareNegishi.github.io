@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 
 const aspectClasses = {
     video: 'aspect-video',
@@ -28,6 +28,33 @@ function ImageSlot({ src, alt, aspectRatio }) {
                     </svg>
                 </div>
             )}
+        </div>
+    );
+}
+
+function Lightbox({ src, alt, onClose }) {
+    useEffect(() => {
+        const handleKey = (e) => { if (e.key === 'Escape') onClose(); };
+        window.addEventListener('keydown', handleKey);
+        return () => window.removeEventListener('keydown', handleKey);
+    }, [onClose]);
+
+    return (
+        <div
+            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+            onClick={onClose}
+        >
+            <button
+                className="absolute top-4 right-4 text-white text-3xl leading-none hover:text-gray-300 transition-colors"
+                onClick={onClose}
+                aria-label="Close lightbox"
+            >×</button>
+            <img
+                src={src}
+                alt={alt}
+                className="max-w-[90vw] max-h-[90vh] object-contain"
+                onClick={(e) => e.stopPropagation()}
+            />
         </div>
     );
 }
