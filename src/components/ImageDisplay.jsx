@@ -32,16 +32,20 @@ function ImageSlot({ src, alt, aspectRatio }) {
     );
 }
 
-function Lightbox({ src, alt, onClose }) {
+function Lightbox({ src, alt, onClose, onPrev, onNext, count }) {
     useEffect(() => {
-        const handleKey = (e) => { if (e.key === 'Escape') onClose(); };
+        const handleKey = (e) => {
+            if (e.key === 'Escape') onClose();
+            if (e.key === 'ArrowLeft') onPrev();
+            if (e.key === 'ArrowRight') onNext();
+        };
         window.addEventListener('keydown', handleKey);
         return () => window.removeEventListener('keydown', handleKey);
-    }, [onClose]);
+    }, [onClose, onPrev, onNext]);
 
     return (
         <div
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black/75 flex items-center justify-center"
             onClick={onClose}
         >
             <button
@@ -49,12 +53,27 @@ function Lightbox({ src, alt, onClose }) {
                 onClick={onClose}
                 aria-label="Close lightbox"
             >×</button>
-            <img
-                src={src}
-                alt={alt}
-                className="max-w-[90vw] max-h-[90vh] object-contain"
-                onClick={(e) => e.stopPropagation()}
-            />
+            <div className="flex items-center gap-4" onClick={(e) => e.stopPropagation()}>
+                {count > 1 && (
+                    <button
+                        className="bg-black/40 hover:bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl leading-none transition-colors"
+                        onClick={onPrev}
+                        aria-label="Previous image"
+                    >‹</button>
+                )}
+                <img
+                    src={src}
+                    alt={alt}
+                    className="max-w-[80vw] max-h-[90vh] object-contain"
+                />
+                {count > 1 && (
+                    <button
+                        className="bg-black/40 hover:bg-black/60 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl leading-none transition-colors"
+                        onClick={onNext}
+                        aria-label="Next image"
+                    >›</button>
+                )}
+            </div>
         </div>
     );
 }
@@ -136,6 +155,9 @@ function Carousel({ images, alt, aspectRatio }) {
                     src={images[index]}
                     alt={`${alt} — image ${index + 1} of ${count}`}
                     onClose={closeLight}
+                    onPrev={goPrev}
+                    onNext={goNext}
+                    count={count}
                 />
             )}
         </div>
