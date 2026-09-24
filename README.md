@@ -1,80 +1,16 @@
-# Nagare Negishi's Portfolio
+# nagarenegishi.com
 
-This repository contains my personal portfolio website, showcasing my software engineering projects and technical skills.
+Source for my personal portfolio site, live at **[nagarenegishi.com](https://nagarenegishi.com)**.
 
-## About Me
+The site covers my products, projects, games, and skills. For a short intro, see my [GitHub profile](https://github.com/NagareNegishi).
 
-Software Engineer with strong foundations in system design and architecture. BSc Computer Science graduate (2025) from Victoria University of Wellington.
+## Built with
+<!-- fill in the site's actual stack, e.g. HTML, CSS, JavaScript -->
 
-Previously interned at Aviat Networks, working on legacy C systems in an Agile team, and tutored AI, Data Structures & Systems Programming at Victoria University of Wellington.
+## Run locally
+<!-- fill in the actual steps, e.g. clone the repo and open index.html, or npm install && npm run dev -->
 
-## Featured Projects
+## Deployment
+Hosted on GitHub Pages and deployed from the main branch.
 
-### Job Application Tracker (2026 - Ongoing)
-Full-stack job tracker with JWT auth, refresh token rotation, and JSON Patch partial updates. Built from scratch while learning C#, then scaled with Claude Code in Dev Containers, deployed on AWS.
-- ASP.NET Core API with EF Core, ASP.NET Identity, and PostgreSQL
-- React + TypeScript frontend with TanStack Query, table and Kanban views with drag-and-drop
-- AI auto-fill using Claude API to extract structured job data from pasted listings
-- Deployed to AWS (EC2 + Docker Compose, RDS, S3) with GitHub Actions CI/CD (test → build → migrate → deploy)
-- [View Code](https://github.com/NagareNegishi/Job-Application-Tracker)
-- [Demo](https://jobtracker.nagarenegishi.com/jobs/)
-
-### Company Verification (2026)
-Published .NET 10 NuGet package that verifies whether a company is registered and active in a country's official business registry, returning a normalized result regardless of source
-- Adapter-per-country design keeps core logic untouched when a new registry is added, with New Zealand (NZBN) and Australia (ABR) built in
-- Shared core consumed as a class library and an HTTP API, structured so an MCP server can sit on the same core
-- Government-registry integration with credential handling, registry-specific filtering, and MBIE attribution compliance
-- [View Code](https://github.com/NagareNegishi/company-verification)
-- [NuGet](https://www.nuget.org/packages/CompanyVerification.Core)
-- [Demo query](https://company-verification.onrender.com/verify?name=Spark%20New%20Zealand&country=NZ) returns live JSON from the NZ register (Render free tier, first request may take 30–60s to wake)
-
-### Pantry2Plate (2026)
-AI-powered recipe generator with ingredient and dietary preference matching, architected as a TypeScript monorepo with shared validation types across React web and React Native mobile apps
-- Claude API integration, Express backend, Docker Compose deployment
-- GitHub Actions CI/CD with Jest and Vitest testing
-- [View Project](https://github.com/NagareNegishi/Pantry2Plate)
-- [Demo](http://nagarenegishi.com/Pantry2Plate/)
-
-### Distributed Logging System (2025)
-Logging infrastructure with a custom Log4j HTTP appender and REST API, test-driven, with graceful failure handling and real-time JMX monitoring
-- Hibernate/JPA persistence with environment-based config for in-memory and production PostgreSQL
-- Transaction management and multi-format export (CSV, HTML, Excel)
-- [View Code](https://github.com/NagareNegishi/Distributed-Logging-System)
-
-### Coffee Finder (2025)
-Location-based web application using JavaScript, HTML/CSS, and Supabase (PostgreSQL)
-- Implemented geolocation services, interactive mapping, and external API integration
-- Created custom SQL functions for geospatial queries and distance calculations
-- [View Project](https://github.com/NagareNegishi/Coffee-Finder)
-- [Demo](https://nagarenegishi.com/Coffee-Finder/)
-
-### Larry Croft's Adventures
-Object-oriented game development with focus on software engineering principles
-- Implemented robust system architecture using design patterns
-- Developed UI controller and data persistence layers in Java
-- Practiced agile development in 6-person team environment
-- [View Code](https://github.com/NagareNegishi/LarryCroftsAdventures)
-
-### ChopChopServe
-Competitive multiplayer cooking game with networked gameplay
-- Real-time network synchronization and player state management
-- Custom cooking interaction systems
-- [View Code](https://github.com/NagareNegishi/ChopChopServe-Public)
-
-### Goblins' Fury
-Tower defense with dynamic difficulty system and modular architecture
-- [View Code](https://github.com/NagareNegishi/Tower-Defense-CGRA252)
-
-### Game Jam Projects
-- **Bar'acuda** - Interactive service management simulation (48hr Game Jam) | [Play](https://games-for-people.itch.io/baracuda) · [Code](https://github.com/NagareNegishi/GGJ-Bar-acuda)
-- **1 Fuji 2 Hawk 3 Nasubi** - Top-down competitive collector with AI-controlled entities (48hr Game Jam) | [Play](https://negimakushi.itch.io/1-fuji-2-hawk-3-nasubi) · [Code](https://github.com/NagareNegishi/Game-jam2)
-- **7 Korobi 8 Oki** - Platformer with memory-based progression (48hr Game Jam) | [Play](https://negimakushi.itch.io/7-korobi-8-oki)
-
-## Contact
-- 📧 [negishinaga@gmail.com](mailto:negishinaga@gmail.com)
-- 🌐 [nagarenegishi.com](https://nagarenegishi.com)
-- 💼 [LinkedIn](https://linkedin.com/in/nagare-negishi)
-- 🌏 Auckland, New Zealand
-
-## Website Status
 [![GitHub Pages](https://img.shields.io/github/deployments/NagareNegishi/NagareNegishi.github.io/github-pages)](https://NagareNegishi.github.io)
