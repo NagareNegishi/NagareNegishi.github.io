@@ -7,9 +7,6 @@ The site covers my products, projects, games, and skills. For a short intro, see
 ## Built with
 <!-- fill in the site's actual stack, e.g. HTML, CSS, JavaScript -->
 
-## Run locally
-<!-- fill in the actual steps, e.g. clone the repo and open index.html, or npm install && npm run dev -->
-
 ## Deployment
 Hosted on GitHub Pages and deployed from the main branch.
 
