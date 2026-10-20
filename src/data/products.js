@@ -2,7 +2,7 @@ export const products = [
     {
         id: 1,
         title: "Kajitor",
-        images: ["/images/table.png", "/images/kanban.png", "/images/analysis.png"],
+        images: ["/images/kanban-drag-card.png", "/images/job-detail-dialog.png", "/images/analytics-dashboard.png"],
         description: "Track job applications from wishlist to offer in one place.",
         features: [
             "Table and Kanban board views, drag cards between stages",
