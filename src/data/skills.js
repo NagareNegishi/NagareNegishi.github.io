@@ -13,8 +13,10 @@ export const skills = [
     {
         category: "Backend",
         items: [
-            "ASP.NET Core, EF Core",
-            "Node.js, Express",
+            "ASP.NET Core",
+            "EF Core",
+            "Node.js",
+            "Express",
             "Hibernate/JPA, Jackson",
             "REST APIs",
             "Stripe, third-party integrations",
@@ -24,25 +26,30 @@ export const skills = [
         category: "Frontend",
         items: [
             "React, React Native, Expo",
-            "shadcn/ui, Tailwind CSS",
+            "React Router",
             "TanStack Query",
+            "shadcn/ui, Tailwind CSS",
             "Vite",
             "Tauri",
+            "Browser Extension (MV3, Chrome / Edge / Firefox)",
         ]
     },
     {
         category: "Database",
         items: [
             "SQL",
-            "PostgreSQL, SQLite",
-            "Relational design, query optimisation",
+            "PostgreSQL",
+            "SQLite",
+            "Relational schema design",
+            "Query optimisation",
         ]
     },
     {
         category: "Security",
         items: [
             "ASP.NET Identity, JWT",
-            "MFA",
+            "Multi-factor authentication (MFA)",
+            "Have I Been Pwned password screening",
             "Rate limiting, security headers",
             "Fail-fast configuration",
         ]
