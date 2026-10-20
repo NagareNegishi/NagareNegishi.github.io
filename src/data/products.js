@@ -3,7 +3,7 @@ export const products = [
         id: 1,
         title: "Kajitor",
         images: ["/images/kanban-drag-card.png", "/images/job-detail-dialog.png", "/images/analytics-dashboard.png"],
-        description: "Track job applications from wishlist to offer in one place.",
+        description: "Job application tracker with a paid subscription plan, browser extension on Chrome, Edge, and Firefox, and a desktop app for Windows and macOS.",
         features: [
             "Table and Kanban board views, drag cards between stages",
             "Attach CV and cover letter per application",
