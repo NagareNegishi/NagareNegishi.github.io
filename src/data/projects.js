@@ -69,12 +69,12 @@ export const softwareProjects = [
         id: 8,
         title: "Rapid Prototypes",
         tags: ["Python", "FastAPI", "PostgreSQL", "React"],
-        description: "Two builds, each planned, coded and tested in under 4 hours.",
+        description: "Two timed builds (each under 4 hours): a school trip payment flow with a mock legacy processor behind an adapter, and a group expense splitter with greedy debt-settlement.",
         links: [
-            { label: "Demo 1", url: "https://school-trips-web.onrender.com" },
-            { label: "Code 1", url: "https://github.com/NagareNegishi/school-trip-payments-live" },
-            { label: "Demo 2", url: "https://nagarenegishi.com/expense-splitter-live/" },
-            { label: "Code 2", url: "https://github.com/NagareNegishi/expense-splitter-live" },
+            { label: "Payments Demo", url: "https://school-trips-web.onrender.com" },
+            { label: "Payments Code", url: "https://github.com/NagareNegishi/school-trip-payments-live" },
+            { label: "Splitter Demo", url: "https://nagarenegishi.com/expense-splitter-live/" },
+            { label: "Splitter Code", url: "https://github.com/NagareNegishi/expense-splitter-live" },
         ]
     },
 ];
