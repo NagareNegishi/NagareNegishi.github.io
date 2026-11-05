@@ -11,16 +11,11 @@ function ProjectCard({ project }) {
                 ))}
             </div>
             <p className="mb-[15px] text-[#666]">{project.description}</p>
-            <div className="flex gap-[15px]">
-                {/* links are optional per project */}
-                {project.links.demo && (
-                    <a className="text-[#0066cc] no-underline hover:underline"
-                        href={project.links.demo}>{project.links.demoLabel}</a>
-                )}
-                {project.links.github && (
-                    <a className="text-[#0066cc] no-underline hover:underline"
-                        href={project.links.github}>View Code</a>
-                )}
+            <div className="flex flex-wrap gap-[15px]">
+                {project.links.filter(link => link.url).map((link, index) => (
+                    <a key={index} className="text-[#0066cc] no-underline hover:underline"
+                        href={link.url}>{link.label}</a>
+                ))}
             </div>
         </div>
     );
