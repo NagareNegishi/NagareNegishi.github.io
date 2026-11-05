@@ -5,9 +5,10 @@ export const skills = [
             "C#",
             "TypeScript/JavaScript",
             "Java",
-            "Python / GDScript",
+            "Python",
             "C/C++",
             "Bash",
+            "GDScript"
         ]
     },
     {
@@ -17,6 +18,7 @@ export const skills = [
             "EF Core",
             "Node.js",
             "Express",
+            "FastAPI",
             "Hibernate/JPA, Jackson",
             "REST APIs",
             "Stripe, third-party integrations",
@@ -31,7 +33,7 @@ export const skills = [
             "shadcn/ui, Tailwind CSS",
             "Vite",
             "Tauri",
-            "Browser Extension (MV3, Chrome / Edge / Firefox)",
+            "Browser Extension (MV3, Chrome/Edge/Firefox)",
         ]
     },
     {
@@ -71,7 +73,7 @@ export const skills = [
             "Maven, NuGet",
             "GitHub Actions CI/CD",
             "AWS (EC2, RDS, S3, ECR)",
-            "Render, Cloudflare",
+            "Render, Cloudflare, Neon",
         ]
     },
     {
